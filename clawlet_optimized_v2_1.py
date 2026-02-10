@@ -23,20 +23,20 @@ import json
 class OptimizationConfig:
     """优化配置"""
     # 批处理配置
-    batch_size: int = 4
-    batch_timeout: float = 0.05  # 50ms 超时
+    batch_size: int = 8
+    batch_timeout: float = 0.02  # 20ms 超时
     
     # 缓存配置
-    l1_cache_size: int = 100  # L1 内存缓存大小
+    l1_cache_size: int = 200  # L1 内存缓存大小
     l2_cache_dir: str = "/tmp/clawlet_cache"  # L2 磁盘缓存目录
-    cache_ttl: int = 3600  # 缓存有效期 (秒)
+    cache_ttl: int = 7200  # 缓存有效期 (秒)
     
     # 内存配置
     max_memory_usage: float = 0.7  # 最大内存使用率
     gc_interval: int = 100  # GC 间隔
     
     # 并发配置
-    max_concurrent: int = 2  # 最大并发数 (基于 2CPU 核)
+    max_concurrent: int = 3  # 最大并发数 (基于 2CPU 核，优化)
     
     # 监控配置
     enable_metrics: bool = True
