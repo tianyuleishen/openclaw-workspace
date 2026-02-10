@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "skills": {
+    "lark-integration": {
+      "version": "1.0.0",
+      "installedAt": 1770476657475
+    },
+    "evolver": {
+      "version": "1.6.1",
+      "installedAt": 1770482253764
+    },
+    "self-reflection": {
+      "version": "1.1.1",
+      "installedAt": 1770482256072
+    },
+    "capability-evolver": {
+      "version": "1.6.1",
+      "installedAt": 1770482264913
+    },
+    "reflect-learn": {
+      "version": "2.0.0",
+      "installedAt": 1770482267267
+    },
+    "financial-market-analysis": {
+      "version": "1.0.0",
+      "installedAt": 1770642065916
+    },
+    "news-summary": {
+      "version": "1.0.1",
+      "installedAt": 1770642103620
+    },
+    "tecent-finance": {
+      "version": "1.0.0",
+      "installedAt": 1770644418562
+    }
+  }
+}

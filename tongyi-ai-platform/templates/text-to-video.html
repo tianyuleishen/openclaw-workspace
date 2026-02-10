@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文生视频 - 通义万相</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>🎬 文生视频</h1>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="/text-to-image">文生图</a></li>
+                <li><a href="/text-to-video" class="active">文生视频</a></li>
+                <li><a href="/image-to-video">图生视频</a></li>
+                <li><a href="/history">历史记录</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="generate-box">
+            <form id="generate-form">
+                <div class="form-group">
+                    <label for="prompt">输入描述：</label>
+                    <textarea 
+                        id="prompt" 
+                        name="prompt" 
+                        placeholder="请描述您想要的视频，例如：现代办公室场景，年轻白领使用AI工具快速完成工作"
+                        required
+                    ></textarea>
+                    <small class="hint">提示：描述场景、人物、动作、风格等</small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="size">视频尺寸：</label>
+                        <select id="size" name="size">
+                            <option value="1280*720" selected>1280 × 720 (横版)</option>
+                            <option value="720*1280">720 × 1280 (竖版)</option>
+                            <option value="1080*1920">1080 × 1920 (9:16)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duration">时长：</label>
+                        <select id="duration" name="duration">
+                            <option value="3">3 秒</option>
+                            <option value="5" selected>5 秒</option>
+                            <option value="10">10 秒</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    <span class="btn-text">🎬 生成视频</span>
+                    <span class="btn-loading" style="display: none;">生成中（可能需要1-3分钟）...</span>
+                </button>
+            </form>
+
+            <div id="result" class="result-box" style="display: none;">
+                <h3>生成结果</h3>
+                <div class="video-container">
+                    <video id="generated-video" controls>
+                        <source src="" type="video/mp4">
+                        您的浏览器不支持视频播放
+                    </video>
+                </div>
+                <div class="actions">
+                    <a id="download-link" href="" download="generated-video.mp4" class="btn-secondary">
+                        📥 下载视频
+                    </a>
+                    <button onclick="location.reload()" class="btn-secondary">
+                        🔄 继续生成
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/js/text-to-video.js"></script>
+</body>
+</html>

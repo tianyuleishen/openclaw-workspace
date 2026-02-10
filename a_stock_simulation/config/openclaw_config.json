@@ -1,0 +1,90 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "~/.openclaw/workspace/a_stock_simulation",
+      "model": "qwen-portal/coder-model",
+      "sandbox": {
+        "mode": "non-main"
+      }
+    },
+    "list": [
+      {
+        "id": "main-trading",
+        "name": "主交易策略",
+        "workspace": "~/.openclaw/workspace/a_stock_simulation/main_trading",
+        "model": "qwen-portal/coder-model",
+        "sandbox": {
+          "mode": "off"
+        }
+      },
+      {
+        "id": "risk-monitor",
+        "name": "风险监控",
+        "workspace": "~/.openclaw/workspace/a_stock_simulation/risk_monitor",
+        "model": "qwen-portal/coder-model",
+        "sandbox": {
+          "mode": "all",
+          "scope": "agent",
+          "workspaceAccess": "ro"
+        },
+        "tools": {
+          "allow": ["read", "sessions_list", "sessions_history", "memory_search", "memory_get"],
+          "deny": ["exec", "write", "edit", "process", "browser", "nodes", "cron", "gateway"]
+        }
+      },
+      {
+        "id": "strategy-analyzer",
+        "name": "策略分析",
+        "workspace": "~/.openclaw/workspace/a_stock_simulation/strategy_analyzer",
+        "model": "qwen-portal/coder-model",
+        "sandbox": {
+          "mode": "all",
+          "scope": "agent",
+          "workspaceAccess": "rw"
+        },
+        "tools": {
+          "allow": ["read", "write", "edit", "memory_search", "memory_get", "web_search", "web_fetch"],
+          "deny": ["exec", "process", "browser", "nodes", "cron", "gateway"]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "agentId": "main-trading",
+        "match": {
+          "channel": "internal",
+          "purpose": "trading-execution"
+        }
+      },
+      {
+        "agentId": "risk-monitor", 
+        "match": {
+          "channel": "internal",
+          "purpose": "risk-assessment"
+        }
+      },
+      {
+        "agentId": "strategy-analyzer",
+        "match": {
+          "channel": "internal",
+          "purpose": "strategy-analysis"
+        }
+      }
+    ]
+  },
+  "cron": {
+    "enabled": true,
+    "jobsFile": "~/.openclaw/workspace/a_stock_simulation/cron/jobs.json"
+  },
+  "memorySearch": {
+    "enabled": true,
+    "provider": "local",
+    "extraPaths": ["~/workspace/a_stock_simulation/trading_logs", "~/workspace/a_stock_simulation/data"]
+  },
+  "tools": {
+    "exec": {
+      "security": "allowlist",
+      "allowlist": ["ls", "ps", "top", "df", "du", "cat", "head", "tail"]
+    }
+  }
+}

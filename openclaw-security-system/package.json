@@ -1,0 +1,31 @@
+{
+  "name": "@openclaw/security-system",
+  "version": "1.0.0",
+  "description": "OpenClaw多层安全防御系统 - 为AI代理提供全方位安全防护",
+  "main": "src/security_defense.js",
+  "scripts": {
+    "start": "node src/start_security_system.js",
+    "test": "node tests/security_tests.js",
+    "scan": "node src/vulnerability_scanner.js"
+  },
+  "keywords": [
+    "ai-security",
+    "defense-system",
+    "input-validation",
+    "threat-detection",
+    "output-filtering"
+  ],
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.8.1",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=11.0.0"
+  }
+}

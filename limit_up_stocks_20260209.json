@@ -1,0 +1,849 @@
+[
+  {
+    "code": "920167",
+    "name": "同享科技",
+    "pct_chg": 24.01,
+    "turnover": 0.19,
+    "industry": "待分析"
+  },
+  {
+    "code": "300480",
+    "name": "光力科技",
+    "pct_chg": 20.02,
+    "turnover": 0.58,
+    "industry": "待分析"
+  },
+  {
+    "code": "301232",
+    "name": "飞沃科技",
+    "pct_chg": 20.0,
+    "turnover": 0.13,
+    "industry": "待分析"
+  },
+  {
+    "code": "688025",
+    "name": "杰普特",
+    "pct_chg": 20.0,
+    "turnover": 0.05,
+    "industry": "待分析"
+  },
+  {
+    "code": "300982",
+    "name": "苏文电能",
+    "pct_chg": 20.0,
+    "turnover": 0.17,
+    "industry": "待分析"
+  },
+  {
+    "code": "301231",
+    "name": "荣信文化",
+    "pct_chg": 20.0,
+    "turnover": 0.02,
+    "industry": "待分析"
+  },
+  {
+    "code": "300912",
+    "name": "凯龙高科",
+    "pct_chg": 20.0,
+    "turnover": 0.02,
+    "industry": "待分析"
+  },
+  {
+    "code": "300364",
+    "name": "中文在线",
+    "pct_chg": 20.0,
+    "turnover": 0.52,
+    "industry": "待分析"
+  },
+  {
+    "code": "688435",
+    "name": "英方软件",
+    "pct_chg": 20.0,
+    "turnover": 0.11,
+    "industry": "待分析"
+  },
+  {
+    "code": "688503",
+    "name": "聚和材料",
+    "pct_chg": 20.0,
+    "turnover": 0.29,
+    "industry": "待分析"
+  },
+  {
+    "code": "301262",
+    "name": "海看股份",
+    "pct_chg": 19.99,
+    "turnover": 0.25,
+    "industry": "待分析"
+  },
+  {
+    "code": "300749",
+    "name": "顶固集创",
+    "pct_chg": 19.99,
+    "turnover": 0.35,
+    "industry": "待分析"
+  },
+  {
+    "code": "300182",
+    "name": "捷成股份",
+    "pct_chg": 19.93,
+    "turnover": 5.3,
+    "industry": "待分析"
+  },
+  {
+    "code": "300394",
+    "name": "天孚通信",
+    "pct_chg": 17.76,
+    "turnover": 0.57,
+    "industry": "待分析"
+  },
+  {
+    "code": "300620",
+    "name": "光库科技",
+    "pct_chg": 17.72,
+    "turnover": 0.42,
+    "industry": "待分析"
+  },
+  {
+    "code": "688167",
+    "name": "炬光科技",
+    "pct_chg": 17.64,
+    "turnover": 0.1,
+    "industry": "待分析"
+  },
+  {
+    "code": "300166",
+    "name": "东方国信",
+    "pct_chg": 16.73,
+    "turnover": 2.13,
+    "industry": "待分析"
+  },
+  {
+    "code": "300804",
+    "name": "广康生化",
+    "pct_chg": 16.04,
+    "turnover": 0.1,
+    "industry": "待分析"
+  },
+  {
+    "code": "920179",
+    "name": "凯德石英",
+    "pct_chg": 15.08,
+    "turnover": 0.14,
+    "industry": "待分析"
+  },
+  {
+    "code": "688521",
+    "name": "芯原股份",
+    "pct_chg": 14.87,
+    "turnover": 0.22,
+    "industry": "待分析"
+  },
+  {
+    "code": "300792",
+    "name": "壹网壹创",
+    "pct_chg": 14.46,
+    "turnover": 0.29,
+    "industry": "待分析"
+  },
+  {
+    "code": "300067",
+    "name": "安诺其",
+    "pct_chg": 14.2,
+    "turnover": 2.32,
+    "industry": "待分析"
+  },
+  {
+    "code": "920670",
+    "name": "数字人",
+    "pct_chg": 14.08,
+    "turnover": 0.11,
+    "industry": "待分析"
+  },
+  {
+    "code": "300570",
+    "name": "太辰光",
+    "pct_chg": 14.06,
+    "turnover": 0.45,
+    "industry": "待分析"
+  },
+  {
+    "code": "300179",
+    "name": "四方达",
+    "pct_chg": 14.03,
+    "turnover": 0.59,
+    "industry": "待分析"
+  },
+  {
+    "code": "920045",
+    "name": "蘅东光",
+    "pct_chg": 14.01,
+    "turnover": 0.03,
+    "industry": "待分析"
+  },
+  {
+    "code": "300209",
+    "name": "有棵树",
+    "pct_chg": 13.03,
+    "turnover": 0.99,
+    "industry": "待分析"
+  },
+  {
+    "code": "300991",
+    "name": "创益通",
+    "pct_chg": 12.89,
+    "turnover": 0.14,
+    "industry": "待分析"
+  },
+  {
+    "code": "688262",
+    "name": "国芯科技",
+    "pct_chg": 12.85,
+    "turnover": 0.36,
+    "industry": "待分析"
+  },
+  {
+    "code": "688143",
+    "name": "长盈通",
+    "pct_chg": 12.42,
+    "turnover": 0.16,
+    "industry": "待分析"
+  },
+  {
+    "code": "301172",
+    "name": "君逸数码",
+    "pct_chg": 12.2,
+    "turnover": 0.21,
+    "industry": "待分析"
+  },
+  {
+    "code": "688501",
+    "name": "青达环保",
+    "pct_chg": 12.17,
+    "turnover": 0.08,
+    "industry": "待分析"
+  },
+  {
+    "code": "300861",
+    "name": "美畅股份",
+    "pct_chg": 12.0,
+    "turnover": 0.47,
+    "industry": "待分析"
+  },
+  {
+    "code": "300624",
+    "name": "万兴科技",
+    "pct_chg": 11.86,
+    "turnover": 0.26,
+    "industry": "待分析"
+  },
+  {
+    "code": "300606",
+    "name": "金太阳",
+    "pct_chg": 11.5,
+    "turnover": 0.22,
+    "industry": "待分析"
+  },
+  {
+    "code": "301548",
+    "name": "崇德科技",
+    "pct_chg": 11.3,
+    "turnover": 0.04,
+    "industry": "待分析"
+  },
+  {
+    "code": "300842",
+    "name": "帝科股份",
+    "pct_chg": 11.28,
+    "turnover": 0.2,
+    "industry": "待分析"
+  },
+  {
+    "code": "920021",
+    "name": "流金科技",
+    "pct_chg": 11.19,
+    "turnover": 0.81,
+    "industry": "待分析"
+  },
+  {
+    "code": "688313",
+    "name": "仕佳光子",
+    "pct_chg": 10.83,
+    "turnover": 0.42,
+    "industry": "待分析"
+  },
+  {
+    "code": "300383",
+    "name": "光环新网",
+    "pct_chg": 10.78,
+    "turnover": 2.36,
+    "industry": "待分析"
+  },
+  {
+    "code": "300548",
+    "name": "长芯博创",
+    "pct_chg": 10.73,
+    "turnover": 0.36,
+    "industry": "待分析"
+  },
+  {
+    "code": "301016",
+    "name": "雷尔伟",
+    "pct_chg": 10.69,
+    "turnover": 0.13,
+    "industry": "待分析"
+  },
+  {
+    "code": "301468",
+    "name": "博盈特焊",
+    "pct_chg": 10.62,
+    "turnover": 0.11,
+    "industry": "待分析"
+  },
+  {
+    "code": "688258",
+    "name": "卓易信息",
+    "pct_chg": 10.43,
+    "turnover": 0.07,
+    "industry": "待分析"
+  },
+  {
+    "code": "300943",
+    "name": "春晖智控",
+    "pct_chg": 10.3,
+    "turnover": 0.24,
+    "industry": "待分析"
+  },
+  {
+    "code": "300055",
+    "name": "万邦达",
+    "pct_chg": 10.24,
+    "turnover": 0.37,
+    "industry": "待分析"
+  },
+  {
+    "code": "002501",
+    "name": "利源股份",
+    "pct_chg": 10.2,
+    "turnover": 1.28,
+    "industry": "待分析"
+  },
+  {
+    "code": "688195",
+    "name": "腾景科技",
+    "pct_chg": 10.18,
+    "turnover": 0.11,
+    "industry": "待分析"
+  },
+  {
+    "code": "688787",
+    "name": "海天瑞声",
+    "pct_chg": 10.14,
+    "turnover": 0.05,
+    "industry": "待分析"
+  },
+  {
+    "code": "601515",
+    "name": "衢州东峰",
+    "pct_chg": 10.12,
+    "turnover": 1.13,
+    "industry": "待分析"
+  },
+  {
+    "code": "002323",
+    "name": "雅博股份",
+    "pct_chg": 10.11,
+    "turnover": 1.43,
+    "industry": "待分析"
+  },
+  {
+    "code": "600477",
+    "name": "杭萧钢构",
+    "pct_chg": 10.11,
+    "turnover": 1.72,
+    "industry": "待分析"
+  },
+  {
+    "code": "600751",
+    "name": "海航科技",
+    "pct_chg": 10.1,
+    "turnover": 2.36,
+    "industry": "待分析"
+  },
+  {
+    "code": "600683",
+    "name": "京投发展",
+    "pct_chg": 10.08,
+    "turnover": 1.1,
+    "industry": "待分析"
+  },
+  {
+    "code": "603980",
+    "name": "吉华集团",
+    "pct_chg": 10.08,
+    "turnover": 0.05,
+    "industry": "待分析"
+  },
+  {
+    "code": "603466",
+    "name": "风语筑",
+    "pct_chg": 10.06,
+    "turnover": 0.22,
+    "industry": "待分析"
+  },
+  {
+    "code": "000016",
+    "name": "深康佳Ａ",
+    "pct_chg": 10.05,
+    "turnover": 1.03,
+    "industry": "待分析"
+  },
+  {
+    "code": "600841",
+    "name": "动力新科",
+    "pct_chg": 10.05,
+    "turnover": 0.66,
+    "industry": "待分析"
+  },
+  {
+    "code": "002054",
+    "name": "德美化工",
+    "pct_chg": 10.05,
+    "turnover": 1.07,
+    "industry": "待分析"
+  },
+  {
+    "code": "600586",
+    "name": "金晶科技",
+    "pct_chg": 10.04,
+    "turnover": 0.29,
+    "industry": "待分析"
+  },
+  {
+    "code": "002506",
+    "name": "协鑫集成",
+    "pct_chg": 10.04,
+    "turnover": 4.47,
+    "industry": "待分析"
+  },
+  {
+    "code": "600589",
+    "name": "大位科技",
+    "pct_chg": 10.04,
+    "turnover": 1.34,
+    "industry": "待分析"
+  },
+  {
+    "code": "002015",
+    "name": "协鑫能科",
+    "pct_chg": 10.03,
+    "turnover": 1.59,
+    "industry": "待分析"
+  },
+  {
+    "code": "002296",
+    "name": "辉煌科技",
+    "pct_chg": 10.03,
+    "turnover": 0.34,
+    "industry": "待分析"
+  },
+  {
+    "code": "002471",
+    "name": "中超控股",
+    "pct_chg": 10.03,
+    "turnover": 4.66,
+    "industry": "待分析"
+  },
+  {
+    "code": "002438",
+    "name": "江苏神通",
+    "pct_chg": 10.03,
+    "turnover": 0.19,
+    "industry": "待分析"
+  },
+  {
+    "code": "603729",
+    "name": "龙韵股份",
+    "pct_chg": 10.03,
+    "turnover": 0.02,
+    "industry": "待分析"
+  },
+  {
+    "code": "002534",
+    "name": "西子洁能",
+    "pct_chg": 10.02,
+    "turnover": 0.22,
+    "industry": "待分析"
+  },
+  {
+    "code": "600732",
+    "name": "爱旭股份",
+    "pct_chg": 10.02,
+    "turnover": 1.59,
+    "industry": "待分析"
+  },
+  {
+    "code": "603533",
+    "name": "掌阅科技",
+    "pct_chg": 10.02,
+    "turnover": 0.07,
+    "industry": "待分析"
+  },
+  {
+    "code": "600884",
+    "name": "杉杉股份",
+    "pct_chg": 10.02,
+    "turnover": 0.2,
+    "industry": "待分析"
+  },
+  {
+    "code": "603191",
+    "name": "望变电气",
+    "pct_chg": 10.02,
+    "turnover": 0.54,
+    "industry": "待分析"
+  },
+  {
+    "code": "600875",
+    "name": "东方电气",
+    "pct_chg": 10.02,
+    "turnover": 1.66,
+    "industry": "待分析"
+  },
+  {
+    "code": "002623",
+    "name": "亚玛顿",
+    "pct_chg": 10.02,
+    "turnover": 0.14,
+    "industry": "待分析"
+  },
+  {
+    "code": "002830",
+    "name": "名雕股份",
+    "pct_chg": 10.02,
+    "turnover": 0.11,
+    "industry": "待分析"
+  },
+  {
+    "code": "603598",
+    "name": "引力传媒",
+    "pct_chg": 10.02,
+    "turnover": 0.46,
+    "industry": "待分析"
+  },
+  {
+    "code": "002624",
+    "name": "完美世界",
+    "pct_chg": 10.02,
+    "turnover": 0.61,
+    "industry": "待分析"
+  },
+  {
+    "code": "600392",
+    "name": "盛和资源",
+    "pct_chg": 10.01,
+    "turnover": 1.55,
+    "industry": "待分析"
+  },
+  {
+    "code": "603616",
+    "name": "韩建河山",
+    "pct_chg": 10.01,
+    "turnover": 1.43,
+    "industry": "待分析"
+  },
+  {
+    "code": "605060",
+    "name": "联德股份",
+    "pct_chg": 10.01,
+    "turnover": 0.09,
+    "industry": "待分析"
+  },
+  {
+    "code": "601595",
+    "name": "上海电影",
+    "pct_chg": 10.01,
+    "turnover": 0.09,
+    "industry": "待分析"
+  },
+  {
+    "code": "001217",
+    "name": "华尔泰",
+    "pct_chg": 10.01,
+    "turnover": 0.22,
+    "industry": "待分析"
+  },
+  {
+    "code": "603301",
+    "name": "振德医疗",
+    "pct_chg": 10.01,
+    "turnover": 0.05,
+    "industry": "待分析"
+  },
+  {
+    "code": "002272",
+    "name": "川润股份",
+    "pct_chg": 10.01,
+    "turnover": 0.78,
+    "industry": "待分析"
+  },
+  {
+    "code": "605566",
+    "name": "福莱蒽特",
+    "pct_chg": 10.01,
+    "turnover": 0.08,
+    "industry": "待分析"
+  },
+  {
+    "code": "603829",
+    "name": "洛凯股份",
+    "pct_chg": 10.0,
+    "turnover": 0.05,
+    "industry": "待分析"
+  },
+  {
+    "code": "603308",
+    "name": "应流股份",
+    "pct_chg": 10.0,
+    "turnover": 0.23,
+    "industry": "待分析"
+  },
+  {
+    "code": "605598",
+    "name": "上海港湾",
+    "pct_chg": 10.0,
+    "turnover": 0.05,
+    "industry": "待分析"
+  },
+  {
+    "code": "601869",
+    "name": "长飞光纤",
+    "pct_chg": 10.0,
+    "turnover": 0.19,
+    "industry": "待分析"
+  },
+  {
+    "code": "603163",
+    "name": "圣晖集成",
+    "pct_chg": 10.0,
+    "turnover": 0.04,
+    "industry": "待分析"
+  },
+  {
+    "code": "002429",
+    "name": "兆驰股份",
+    "pct_chg": 10.0,
+    "turnover": 0.49,
+    "industry": "待分析"
+  },
+  {
+    "code": "600330",
+    "name": "天通股份",
+    "pct_chg": 10.0,
+    "turnover": 1.4,
+    "industry": "待分析"
+  },
+  {
+    "code": "603929",
+    "name": "亚翔集成",
+    "pct_chg": 10.0,
+    "turnover": 0.05,
+    "industry": "待分析"
+  },
+  {
+    "code": "603031",
+    "name": "XD安孚科",
+    "pct_chg": 10.0,
+    "turnover": 0.09,
+    "industry": "待分析"
+  },
+  {
+    "code": "603103",
+    "name": "横店影视",
+    "pct_chg": 10.0,
+    "turnover": 0.28,
+    "industry": "待分析"
+  },
+  {
+    "code": "001326",
+    "name": "联域股份",
+    "pct_chg": 10.0,
+    "turnover": 0.03,
+    "industry": "待分析"
+  },
+  {
+    "code": "605287",
+    "name": "德才股份",
+    "pct_chg": 10.0,
+    "turnover": 0.01,
+    "industry": "待分析"
+  },
+  {
+    "code": "603629",
+    "name": "利通电子",
+    "pct_chg": 10.0,
+    "turnover": 0.5,
+    "industry": "待分析"
+  },
+  {
+    "code": "603618",
+    "name": "杭电股份",
+    "pct_chg": 9.99,
+    "turnover": 2.17,
+    "industry": "待分析"
+  },
+  {
+    "code": "002440",
+    "name": "闰土股份",
+    "pct_chg": 9.99,
+    "turnover": 0.51,
+    "industry": "待分析"
+  },
+  {
+    "code": "000014",
+    "name": "沙河股份",
+    "pct_chg": 9.99,
+    "turnover": 0.05,
+    "industry": "待分析"
+  },
+  {
+    "code": "001266",
+    "name": "宏英智能",
+    "pct_chg": 9.99,
+    "turnover": 0.08,
+    "industry": "待分析"
+  },
+  {
+    "code": "001330",
+    "name": "博纳影业",
+    "pct_chg": 9.99,
+    "turnover": 1.8,
+    "industry": "待分析"
+  },
+  {
+    "code": "603626",
+    "name": "科森科技",
+    "pct_chg": 9.99,
+    "turnover": 0.34,
+    "industry": "待分析"
+  },
+  {
+    "code": "002099",
+    "name": "海翔药业",
+    "pct_chg": 9.99,
+    "turnover": 1.11,
+    "industry": "待分析"
+  },
+  {
+    "code": "000892",
+    "name": "欢瑞世纪",
+    "pct_chg": 9.99,
+    "turnover": 0.19,
+    "industry": "待分析"
+  },
+  {
+    "code": "000525",
+    "name": "红太阳",
+    "pct_chg": 9.98,
+    "turnover": 1.27,
+    "industry": "待分析"
+  },
+  {
+    "code": "002129",
+    "name": "TCL中环",
+    "pct_chg": 9.98,
+    "turnover": 4.32,
+    "industry": "待分析"
+  },
+  {
+    "code": "003018",
+    "name": "金富科技",
+    "pct_chg": 9.98,
+    "turnover": 0.02,
+    "industry": "待分析"
+  },
+  {
+    "code": "600590",
+    "name": "泰豪科技",
+    "pct_chg": 9.97,
+    "turnover": 1.1,
+    "industry": "待分析"
+  },
+  {
+    "code": "002716",
+    "name": "湖南白银",
+    "pct_chg": 9.97,
+    "turnover": 4.7,
+    "industry": "待分析"
+  },
+  {
+    "code": "601360",
+    "name": "三六零",
+    "pct_chg": 9.97,
+    "turnover": 3.56,
+    "industry": "待分析"
+  },
+  {
+    "code": "002455",
+    "name": "百川股份",
+    "pct_chg": 9.96,
+    "turnover": 0.27,
+    "industry": "待分析"
+  },
+  {
+    "code": "002079",
+    "name": "苏州固锝",
+    "pct_chg": 9.96,
+    "turnover": 0.77,
+    "industry": "待分析"
+  },
+  {
+    "code": "600185",
+    "name": "珠免集团",
+    "pct_chg": 9.96,
+    "turnover": 1.63,
+    "industry": "待分析"
+  },
+  {
+    "code": "600722",
+    "name": "金牛化工",
+    "pct_chg": 9.95,
+    "turnover": 0.77,
+    "industry": "待分析"
+  },
+  {
+    "code": "600172",
+    "name": "黄河旋风",
+    "pct_chg": 9.95,
+    "turnover": 1.48,
+    "industry": "待分析"
+  },
+  {
+    "code": "002218",
+    "name": "拓日新能",
+    "pct_chg": 9.94,
+    "turnover": 4.3,
+    "industry": "待分析"
+  },
+  {
+    "code": "002309",
+    "name": "中利集团",
+    "pct_chg": 9.94,
+    "turnover": 1.96,
+    "industry": "待分析"
+  },
+  {
+    "code": "000571",
+    "name": "新大洲A",
+    "pct_chg": 9.93,
+    "turnover": 0.62,
+    "industry": "待分析"
+  },
+  {
+    "code": "603188",
+    "name": "亚邦股份",
+    "pct_chg": 9.93,
+    "turnover": 0.35,
+    "industry": "待分析"
+  }
+]

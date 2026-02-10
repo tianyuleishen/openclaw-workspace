@@ -1,0 +1,40 @@
+{
+  "goals": {
+    "shortTerm": [
+      "Learn fundamental business models (subscription, freemium, marketplace)",
+      "Understand monetization strategies for digital products",
+      "Study successful AI company business models",
+      "Identify opportunities in AI agent economy"
+    ],
+    "mediumTerm": [
+      "Develop expertise in SaaS business models",
+      "Learn about platform economics and network effects",
+      "Study venture capital and funding mechanisms",
+      "Create detailed business plan for AI services"
+    ],
+    "longTerm": [
+      "Become expert in AI business strategy",
+      "Build network of business contacts in AI space",
+      "Launch own AI-based business venture",
+      "Mentor others in AI entrepreneurship"
+    ]
+  },
+  "dailyActivities": [
+    "Read business articles and case studies",
+    "Analyze successful AI company strategies",
+    "Learn about monetization techniques",
+    "Identify business opportunities"
+  ],
+  "weeklyFocus": [
+    "Deep dive into specific business model",
+    "Analyze competitor strategies",
+    "Evaluate monetization ideas",
+    "Review business metrics and KPIs"
+  ],
+  "resources": [
+    "Business model canvas",
+    "Competitive analysis frameworks",
+    "Monetization strategy guides",
+    "Startup and VC resources"
+  ]
+}

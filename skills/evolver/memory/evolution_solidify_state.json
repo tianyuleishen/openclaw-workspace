@@ -1,0 +1,126 @@
+{
+  "last_run": {
+    "run_id": "run_1770682850195",
+    "created_at": "2026-02-10T00:20:50.212Z",
+    "parent_event_id": "evt_1770600014186",
+    "selected_gene_id": null,
+    "selected_capsule_id": "capsule_1770600014186",
+    "selector": {
+      "selected": null,
+      "reason": [
+        "capsule trigger matches signals",
+        "no matching gene found; new gene may be required",
+        "signals: memory_missing, user_missing",
+        "memory_graph: memory_prefer:gene_gep_optimize_prompt_and_assets | gene_prior:0.667"
+      ],
+      "alternatives": []
+    },
+    "signals": [
+      "memory_missing",
+      "user_missing"
+    ],
+    "mutation": {
+      "type": "Mutation",
+      "id": "mut_1770682850192",
+      "category": "optimize",
+      "trigger_signals": [
+        "memory_missing",
+        "user_missing"
+      ],
+      "target": "behavior:protocol",
+      "expected_effect": "improve success rate and reduce repeated operational cost",
+      "risk_level": "low"
+    },
+    "mutation_id": "mut_1770682850192",
+    "personality_state": {
+      "type": "PersonalityState",
+      "rigor": 0.7,
+      "creativity": 0.35,
+      "verbosity": 0.25,
+      "risk_tolerance": 0.4,
+      "obedience": 0.85
+    },
+    "personality_key": "rigor=0.7|creativity=0.3|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
+    "personality_known": true,
+    "personality_mutations": [],
+    "drift": false,
+    "selected_by": "memory_graph+selector",
+    "baseline_untracked": [
+      ".clawhub/origin.json",
+      "CONTRIBUTING.md",
+      "README.md",
+      "README.zh-CN.md",
+      "SKILL.md",
+      "_meta.json",
+      "assets/gep/candidates.jsonl",
+      "assets/gep/capsules.json",
+      "assets/gep/events.jsonl",
+      "assets/gep/genes.json",
+      "index.js",
+      "memory/evolution_solidify_state.json",
+      "memory/evolution_state.json",
+      "memory/gep_prompt_Cycle_#0003_run_1770650514805.json",
+      "memory/gep_prompt_Cycle_#0003_run_1770650514805.txt",
+      "memory/gep_prompt_Cycle_#0004_run_1770650702809.json",
+      "memory/gep_prompt_Cycle_#0004_run_1770650702809.txt",
+      "memory/gep_prompt_Cycle_#0005_run_1770682193316.json",
+      "memory/gep_prompt_Cycle_#0005_run_1770682193316.txt",
+      "memory/gep_prompt_Cycle_#0006_run_1770682346513.json",
+      "memory/gep_prompt_Cycle_#0006_run_1770682346513.txt",
+      "memory/gep_prompt_Cycle_#0007_run_1770682551256.json",
+      "memory/gep_prompt_Cycle_#0007_run_1770682551256.txt",
+      "memory/memory_graph.jsonl",
+      "memory/memory_graph_state.json",
+      "memory/personality_state.json",
+      "package-lock.json",
+      "package.json",
+      "scripts/a2a_export.js",
+      "scripts/a2a_ingest.js",
+      "scripts/a2a_promote.js",
+      "scripts/analyze_by_skill.js",
+      "scripts/build_public.js",
+      "scripts/export_history.js",
+      "scripts/extract_log.js",
+      "scripts/generate_history.js",
+      "scripts/gep_append_event.js",
+      "scripts/gep_personality_report.js",
+      "scripts/human_report.js",
+      "scripts/publish_public.js",
+      "scripts/recover_loop.js",
+      "scripts/suggest_version.js",
+      "src/evolve.js",
+      "src/gep/a2a.js",
+      "src/gep/a2aProtocol.js",
+      "src/gep/assetStore.js",
+      "src/gep/bridge.js",
+      "src/gep/candidates.js",
+      "src/gep/contentHash.js",
+      "src/gep/envFingerprint.js",
+      "src/gep/memoryGraph.js",
+      "src/gep/mutation.js",
+      "src/gep/paths.js",
+      "src/gep/personality.js",
+      "src/gep/prompt.js",
+      "src/gep/selector.js",
+      "src/gep/signals.js",
+      "src/gep/solidify.js",
+      "src/gep/validationReport.js"
+    ],
+    "baseline_tracked": [],
+    "baseline_git_head": null,
+    "blast_radius_estimate": {
+      "files": 12,
+      "lines": 960
+    }
+  },
+  "last_solidify": {
+    "run_id": "run_1770599528151",
+    "at": "2026-02-09T01:20:14.186Z",
+    "event_id": "evt_1770600014186",
+    "capsule_id": "capsule_1770600014186",
+    "outcome": {
+      "status": "success",
+      "score": 0.85
+    }
+  }
+}

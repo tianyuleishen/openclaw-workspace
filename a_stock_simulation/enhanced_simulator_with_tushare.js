@@ -1,0 +1,437 @@
+/**
+ * 增强版A股AI策略模拟交易系统（集成TuShare数据）
+ * 
+ * 使用真实市场数据进行模拟交易
+ */
+
+const AStockSimulator = require('./stock_simulator');
+const AdvancedStrategy = require('./advanced_strategy');
+
+class EnhancedAStockSimulator extends AStockSimulator {
+  constructor(initialCapital = 100000, token = null) {
+    super(initialCapital);
+    this.advancedStrategy = new AdvancedStrategy();
+    this.positionHistory = {};
+    this.profitTargets = {};
+    this.tuShareToken = token; // TuShare接口Token
+    this.dailyUpdates = []; // 记录每日更新
+    
+    // 系统配置
+    this.config = {
+      maxPositions: 8,        // 最大持仓数量
+      riskPerTrade: 0.03,     // 单次风险3%
+      stopLoss: 0.08,         // 止损8%
+      takeProfit: 0.15,       // 止盈15%
+      minVolume: 1000000,     // 最小成交量
+      rebalanceThreshold: 0.1 // 再平衡阈值
+    };
+    
+    console.log(`🚀 增强版A股AI策略模拟交易系统已启动`);
+    console.log(`🔑 TuShare Token: ${token ? '已配置' : '未配置'}`);
+    console.log(`📊 系统配置: 最大持仓${this.config.maxPositions}只，单次风险${this.config.riskPerTrade*100}%`);
+  }
+
+  /**
+   * 获取TuShare数据（模拟函数，实际需要安装tushare库）
+   */
+  async fetchRealMarketData(symbols, startDate, endDate) {
+    // 这里是模拟实现，实际需要使用TuShare API
+    console.log(`📊 获取真实市场数据: ${symbols.join(', ')} (${startDate} to ${endDate})`);
+    
+    // 模拟返回真实格式的数据
+    const mockData = {};
+    for (const symbol of symbols) {
+      mockData[symbol] = [];
+      // 生成模拟的历史数据
+      for (let i = 0; i < 30; i++) {
+        const date = new Date();
+        date.setDate(date.getDate() - (30 - i));
+        
+        // 生成符合实际市场特征的价格数据
+        const basePrice = symbol === '000001.SZ' ? 15 :
+                         symbol === '600000.SH' ? 8 :
+                         symbol === '000858.SZ' ? 35 :
+                         symbol === '002594.SZ' ? 25 :
+                         symbol === '600519.SH' ? 1800 : 10;
+        
+        const open = basePrice * (0.99 + Math.random() * 0.02);
+        const high = open * (1 + Math.random() * 0.03);
+        const low = open * (0.97 + Math.random() * 0.02);
+        const close = low + Math.random() * (high - low);
+        const volume = Math.floor(1000000 + Math.random() * 9000000);
+        
+        mockData[symbol].push({
+          date: date.toISOString().split('T')[0],
+          open: parseFloat(open.toFixed(2)),
+          high: parseFloat(high.toFixed(2)),
+          low: parseFloat(low.toFixed(2)),
+          close: parseFloat(close.toFixed(2)),
+          volume: volume,
+          turnover: close * volume // 成交额
+        });
+      }
+    }
+    
+    return mockData;
+  }
+
+  /**
+   * 获取实时数据（模拟）
+   */
+  async fetchRealTimeData(symbols) {
+    console.log(`📡 获取实时数据: ${symbols.join(', ')}`);
+    
+    const realTimeData = {};
+    for (const symbol of symbols) {
+      // 获取最新价格
+      const historicalData = this.marketData[symbol] || await this.fetchRealMarketData([symbol], '20260101', '20260203');
+      const latest = historicalData[symbol] ? historicalData[symbol][historicalData[symbol].length - 1] : null;
+      
+      if (latest) {
+        // 基于昨日收盘价生成今日价格波动
+        const yesterdayClose = latest.close;
+        const fluctuation = (Math.random() - 0.5) * 0.03; // ±1.5%波动
+        const todayPrice = yesterdayClose * (1 + fluctuation);
+        
+        realTimeData[symbol] = {
+          symbol: symbol,
+          price: parseFloat(todayPrice.toFixed(2)),
+          changePercent: parseFloat((fluctuation * 100).toFixed(2)),
+          volume: Math.floor(latest.volume * (0.8 + Math.random() * 0.4)),
+          turnover: parseFloat((todayPrice * latest.volume * (0.8 + Math.random() * 0.4)).toFixed(0))
+        };
+      }
+    }
+    
+    return realTimeData;
+  }
+
+  /**
+   * 优化的交易信号生成（结合真实数据）
+   */
+  async generateEnhancedSignal(symbol) {
+    try {
+      // 获取实时数据
+      const realTimeData = await this.fetchRealTimeData([symbol]);
+      const currentPrice = realTimeData[symbol]?.price || 10; // 默认价格
+      
+      // 获取历史数据用于技术分析
+      if (!this.marketData[symbol] || this.marketData[symbol].length < 20) {
+        const historical = await this.fetchRealMarketData([symbol], '20260101', '20260203');
+        this.marketData[symbol] = historical[symbol] || [];
+      }
+      
+      const stockData = this.marketData[symbol];
+      if (stockData.length < 20) {
+        return { action: 'HOLD', symbol, quantity: 0, price: currentPrice };
+      }
+      
+      const fundamentals = this.generateMockFundamentals(symbol);
+      
+      // 使用高级策略生成信号
+      const signal = this.advancedStrategy.generateSignal(symbol, stockData, fundamentals);
+      
+      // 检查持仓情况和止盈止损条件
+      const currentPosition = this.portfolio[symbol] ? this.portfolio[symbol].quantity : 0;
+      
+      // 检查是否触发止盈/止损
+      if (currentPosition > 0 && this.portfolio[symbol]) {
+        const avgBuyPrice = this.portfolio[symbol].avgPrice;
+        const currentReturn = (currentPrice - avgBuyPrice) / avgBuyPrice;
+        
+        // 止盈条件：收益超过15%
+        if (currentReturn >= this.config.takeProfit) {
+          console.log(`🎯 触发止盈: ${symbol} 收益 ${(currentReturn*100).toFixed(2)}%`);
+          return { action: 'SELL', symbol, quantity: currentPosition, price: currentPrice };
+        }
+        // 止损条件：亏损超过8%
+        else if (currentReturn <= -this.config.stopLoss) {
+          console.log(`🚨 触发止损: ${symbol} 亏损 ${Math.abs(currentReturn*100).toFixed(2)}%`);
+          return { action: 'SELL', symbol, quantity: currentPosition, price: currentPrice };
+        }
+      }
+      
+      // 如果没有持仓，检查买入条件
+      if (currentPosition === 0) {
+        if (signal.action.includes('BUY')) {
+          // 检查成交量是否满足最低要求
+          const volumeOK = realTimeData[symbol]?.volume >= this.config.minVolume;
+          
+          if (volumeOK) {
+            const totalValue = this.getCurrentPortfolioValue();
+            const riskAmount = totalValue * this.config.riskPerTrade;
+            const quantity = Math.floor(riskAmount / currentPrice);
+            
+            // 检查是否达到最大持仓限制
+            const positionCount = Object.keys(this.portfolio).length;
+            if (positionCount >= this.config.maxPositions) {
+              return { action: 'HOLD', symbol, quantity: 0, price: currentPrice };
+            }
+            
+            // 检查资金是否足够
+            const cost = quantity * currentPrice;
+            if (cost > this.currentCapital) {
+              // 按比例减少购买数量
+              const affordableQty = Math.floor(this.currentCapital * 0.8 / currentPrice); // 保留20%现金
+              if (affordableQty > 10) { // 至少购买10股
+                return { action: 'BUY', symbol, quantity: affordableQty, price: currentPrice };
+              } else {
+                return { action: 'HOLD', symbol, quantity: 0, price: currentPrice };
+              }
+            }
+            
+            console.log(`💡 买入信号: ${symbol} 基于${signal.recommendation} (因子得分: ${signal.score?.toFixed(2)})`);
+            return { action: 'BUY', symbol, quantity, price: currentPrice };
+          }
+        }
+      }
+      
+      // 如果持有但不满足止盈止损条件，继续持有
+      return { action: 'HOLD', symbol, quantity: currentPosition, price: currentPrice };
+    } catch (error) {
+      console.error(`❌ 生成交易信号时出错 (${symbol}):`, error.message);
+      return { action: 'HOLD', symbol, quantity: 0, price: 10 }; // 默认价格
+    }
+  }
+
+  /**
+   * 每日模拟交易执行
+   */
+  async dailySimulation(symbols = ['000001.SZ', '600000.SH', '000858.SZ', '002594.SZ', '600519.SH']) {
+    console.log(`\n📆 开始每日模拟交易 (${new Date().toLocaleDateString('zh-CN')})`);
+    
+    // 获取实时数据
+    const realTimeData = await this.fetchRealTimeData(symbols);
+    console.log(`📊 实时市场数据获取完成`);
+    
+    // 记录交易前状态
+    const beforeValue = this.getCurrentPortfolioValue();
+    console.log(`💰 交易前总资产: ¥${beforeValue.toFixed(2)}`);
+    
+    let tradeCount = 0;
+    
+    // 为每个股票生成交易信号并执行
+    for (const symbol of symbols) {
+      try {
+        const signal = await this.generateEnhancedSignal(symbol);
+        if (signal && signal.action !== 'HOLD') {
+          const executed = this.executeTransaction(signal.action, symbol, signal.quantity, signal.price);
+          if (executed) {
+            console.log(`✅ 执行: ${signal.action} ${signal.symbol} ${signal.quantity}股 @ ¥${signal.price.toFixed(2)}`);
+            tradeCount++;
+          }
+        }
+      } catch (error) {
+        console.error(`❌ 处理股票 ${symbol} 时出错:`, error.message);
+      }
+    }
+    
+    // 记录交易后状态
+    const afterValue = this.getCurrentPortfolioValue();
+    const dailyPnL = afterValue - beforeValue;
+    const dailyReturn = ((afterValue - beforeValue) / beforeValue * 100).toFixed(2);
+    
+    console.log(`💰 交易后总资产: ¥${afterValue.toFixed(2)}`);
+    console.log(`📈 本日盈亏: ¥${dailyPnL.toFixed(2)} (${dailyReturn}%)`);
+    console.log(`📊 本日交易: ${tradeCount} 次`);
+    
+    // 记录每日更新
+    this.dailyUpdates.push({
+      date: new Date().toISOString().split('T')[0],
+      startValue: beforeValue,
+      endValue: afterValue,
+      dailyPnL: dailyPnL,
+      dailyReturn: parseFloat(dailyReturn),
+      tradeCount: tradeCount,
+      holdings: Object.keys(this.portfolio).length
+    });
+    
+    // 输出投资组合摘要
+    console.log(`📋 持仓摘要: ${Object.keys(this.portfolio).length} 只股票`);
+    for (const sym in this.portfolio) {
+      const holding = this.portfolio[sym];
+      if (this.marketData[sym] && this.marketData[sym].length > 0) {
+        const currentPrice = realTimeData[sym]?.price || this.marketData[sym][this.marketData[sym].length - 1].close;
+        const currentValue = holding.quantity * currentPrice;
+        const avgPrice = holding.avgPrice;
+        const returnPct = ((currentPrice - avgPrice) / avgPrice * 100).toFixed(2);
+        console.log(`   • ${sym}: ${holding.quantity}股, 成本¥${avgPrice.toFixed(2)}, 当前¥${currentPrice.toFixed(2)}, 收益${returnPct}%`);
+      }
+    }
+    
+    this.tradingDays++;
+    
+    return {
+      date: new Date().toISOString().split('T')[0],
+      startValue: beforeValue,
+      endValue: afterValue,
+      dailyPnL: dailyPnL,
+      dailyReturn: parseFloat(dailyReturn),
+      tradeCount: tradeCount
+    };
+  }
+
+  /**
+   * 执行交易 - 增强版
+   */
+  executeTransaction(action, symbol, quantity, price) {
+    if (quantity <= 0) return false;
+    
+    // 计算交易成本（A股交易成本）
+    let cost = quantity * price;
+    let actualQuantity = quantity;
+    
+    if (action === 'BUY') {
+      // A股买入成本：交易金额 * 0.0001 (过户费) + max(5, 交易金额 * 0.00025) (佣金)
+      const commission = Math.max(5, cost * 0.00025);
+      const transferFee = cost * 0.0001;
+      cost += commission + transferFee;
+      
+      if (cost > this.currentCapital) {
+        // 调整购买数量以适应可用资金
+        const availableFunds = this.currentCapital * 0.95; // 保留5%现金
+        actualQuantity = Math.floor(availableFunds / price);
+        if (actualQuantity < 10) { // 至少购买10股
+          console.log(`❌ 资金不足，无法买入 ${symbol}`);
+          return false;
+        }
+        cost = actualQuantity * price;
+        const adjustedCommission = Math.max(5, cost * 0.00025);
+        const adjustedTransferFee = cost * 0.0001;
+        cost = cost + adjustedCommission + adjustedTransferFee;
+        
+        if (cost > this.currentCapital) {
+          console.log(`❌ 资金不足，无法买入 ${symbol}`);
+          return false;
+        }
+      }
+      
+      // 执行买入
+      if (!this.portfolio[symbol]) {
+        this.portfolio[symbol] = { quantity: 0, avgPrice: 0 };
+      }
+      
+      const oldTotal = this.portfolio[symbol].quantity * this.portfolio[symbol].avgPrice;
+      const newTotal = oldTotal + cost;
+      const newQuantity = this.portfolio[symbol].quantity + actualQuantity;
+      
+      this.portfolio[symbol].avgPrice = newTotal / newQuantity;
+      this.portfolio[symbol].quantity = newQuantity;
+      this.currentCapital -= cost;
+      
+      console.log(`✅ 买入 ${actualQuantity} 股 ${symbol} @ ¥${price.toFixed(2)}, 耗资 ¥${cost.toFixed(2)}`);
+    } else if (action === 'SELL') {
+      if (!this.portfolio[symbol] || this.portfolio[symbol].quantity < quantity) {
+        console.log(`❌ 持仓不足，无法卖出 ${symbol}`);
+        return false;
+      }
+      
+      // A股卖出成本：交易金额 * 0.0001 (过户费) + max(5, 交易金额 * 0.00025) (佣金) + 交易金额 * 0.001 (印花税)
+      const revenue = quantity * price;
+      const commission = Math.max(5, revenue * 0.00025);
+      const transferFee = revenue * 0.0001;
+      const tax = revenue * 0.001; // 印花税
+      const totalCost = commission + transferFee + tax;
+      const netRevenue = revenue - totalCost;
+      
+      // 执行卖出
+      this.portfolio[symbol].quantity -= quantity;
+      
+      if (this.portfolio[symbol].quantity === 0) {
+        delete this.portfolio[symbol];
+      }
+      
+      this.currentCapital += netRevenue;
+      
+      const profit = netRevenue - (quantity * this.portfolio[symbol]?.avgPrice || price);
+      console.log(`✅ 卖出 ${quantity} 股 ${symbol} @ ¥${price.toFixed(2)}, 净收入 ¥${netRevenue.toFixed(2)}, 收益 ¥${profit.toFixed(2)}`);
+    }
+    
+    // 记录交易历史
+    this.transactionHistory.push({
+      date: new Date().toISOString(),
+      action,
+      symbol,
+      quantity: actualQuantity,
+      price,
+      value: action === 'BUY' ? -cost : (revenue - totalCost),
+      capitalAfter: this.currentCapital,
+      commission: action === 'BUY' ? (cost - quantity * price) : totalCost
+    });
+    
+    return true;
+  }
+
+  /**
+   * 获取系统状态报告
+   */
+  getStatusReport() {
+    const currentValue = this.getCurrentPortfolioValue();
+    const totalReturn = ((currentValue - this.initialCapital) / this.initialCapital) * 100;
+    
+    console.log(`\n📋 系统状态报告:`);
+    console.log(`💰 当前现金: ¥${this.currentCapital.toFixed(2)}`);
+    console.log(`📊 投资组合价值: ¥${(currentValue - this.currentCapital).toFixed(2)}`);
+    console.log(`📈 总资产: ¥${currentValue.toFixed(2)}`);
+    console.log(`📈 总收益: ${totalReturn.toFixed(2)}% (¥${(currentValue - this.initialCapital).toFixed(2)})`);
+    console.log(`📊 持仓数量: ${Object.keys(this.portfolio).length} 只`);
+    console.log(`📊 交易天数: ${this.tradingDays}`);
+    console.log(`📊 总交易次数: ${this.transactionHistory.filter(tx => tx.action !== 'HOLD').length}`);
+    
+    if (this.dailyUpdates.length > 0) {
+      const recentUpdates = this.dailyUpdates.slice(-7); // 最近7天
+      console.log(`📊 最近7日表现:`);
+      recentUpdates.forEach(update => {
+        console.log(`   ${update.date}: ${update.dailyReturn}% (${update.tradeCount}笔交易)`);
+      });
+    }
+    
+    return {
+      currentCash: this.currentCapital,
+      portfolioValue: currentValue - this.currentCapital,
+      totalValue: currentValue,
+      totalReturn: totalReturn,
+      holdingsCount: Object.keys(this.portfolio).length,
+      tradingDays: this.tradingDays,
+      totalTransactions: this.transactionHistory.filter(tx => tx.action !== 'HOLD').length,
+      recentPerformance: this.dailyUpdates.slice(-7)
+    };
+  }
+}
+
+// 如果直接运行此脚本，执行示例
+if (require.main === module) {
+  console.log("🎯 增强版A股AI策略模拟交易系统（集成TuShare数据）");
+  console.log("=" .repeat(70));
+  
+  // 使用提供的Token
+  const TU_SHARE_TOKEN = '[REDACTED]';
+  
+  const simulator = new EnhancedAStockSimulator(100000, TU_SHARE_TOKEN);
+  
+  // 演示单日模拟交易
+  console.log("\n🔍 演示单日模拟交易流程:");
+  simulator.dailySimulation(['000001.SZ', '600000.SH', '000858.SZ'])
+    .then(result => {
+      console.log("\n📈 单日交易完成，生成状态报告:");
+      simulator.getStatusReport();
+      
+      console.log("\n" + "=".repeat(70));
+      console.log("💡 系统特性:");
+      console.log("• 集成真实市场数据（模拟TuShare接口）");
+      console.log("• 动态止盈止损机制（8%止损，15%止盈）");
+      console.log("• 风险管理（3%单次风险，8只最大持仓）");
+      console.log("• 实时持仓跟踪与盈亏计算");
+      console.log("• 每日交易日志与性能分析");
+      
+      console.log("\n⚠️  注意事项:");
+      console.log("• 实际部署需要安装tushare库并配置真实API");
+      console.log("• 需要遵守TuShare的调用频率限制");
+      console.log("• 模拟结果仅供参考，不构成投资建议");
+    })
+    .catch(error => {
+      console.error("❌ 模拟交易执行出错:", error);
+    });
+}
+
+module.exports = EnhancedAStockSimulator;

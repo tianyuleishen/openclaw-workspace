@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史记录 - 通义万相</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>📋 历史记录</h1>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="/text-to-image">文生图</a></li>
+                <li><a href="/text-to-video">文生视频</a></li>
+                <li><a href="/image-to-video">图生视频</a></li>
+                <li><a href="/history" class="active">历史记录</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="history-container">
+            <div class="history-header">
+                <h2>我的创作历史</h2>
+                <button onclick="loadHistory()" class="btn-secondary">🔄 刷新</button>
+            </div>
+            
+            <div id="history-list" class="history-list">
+                <div class="loading">加载中...</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/js/history.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "mode": "auto",
+  "interval": 3600000,
+  "maxChanges": 5,
+  "safetyLevel": "high"
+}

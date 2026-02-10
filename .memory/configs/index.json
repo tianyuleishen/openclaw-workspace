@@ -1,0 +1,25 @@
+{
+  "type": "configs",
+  "created": "2026-02-09T15:07:22.077948",
+  "entries": [
+    {
+      "id": "config_20260209_150758_366",
+      "timestamp": "2026-02-09T15:07:58.496388",
+      "type": "CONFIG",
+      "name": "memory_mode",
+      "old_value": "text",
+      "new_value": "json",
+      "reason": "提升查询效率"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.405840",
+      "type": "CONFIG",
+      "name": "记忆系统测试配置",
+      "old_value": "无",
+      "new_value": "全面测试模式",
+      "reason": "用户要求全面评估记忆系统"
+    }
+  ],
+  "last_updated": "2026-02-09T15:07:58.496619"
+}

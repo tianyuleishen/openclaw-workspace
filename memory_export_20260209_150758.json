@@ -1,0 +1,69 @@
+{
+  "exported_at": "2026-02-09T15:07:58.499839",
+  "version": "1.0",
+  "stats": {
+    "decisions": 2,
+    "learnings": 1,
+    "configs": 1,
+    "conversations": 1
+  },
+  "data": {
+    "decisions": [
+      {
+        "id": "decision_20260209_150735_316",
+        "timestamp": "2026-02-09T15:07:35.633994",
+        "type": "DECISION",
+        "intent": "TEST",
+        "action": "EXECUTE",
+        "confidence": 0.97,
+        "message": "测试结构化记忆系统",
+        "context": {
+          "user": "熊雷"
+        }
+      },
+      {
+        "id": "decision_20260209_150758_562",
+        "timestamp": "2026-02-09T15:07:58.493391",
+        "type": "DECISION",
+        "intent": "CREATE_MEMORY",
+        "action": "CREATE",
+        "confidence": 0.95,
+        "message": "创建结构化记忆系统",
+        "context": {
+          "project": "认知框架"
+        }
+      }
+    ],
+    "learnings": [
+      {
+        "id": "learning_20260209_150758_905",
+        "timestamp": "2026-02-09T15:07:58.495113",
+        "type": "LEARNING",
+        "topic": "Tree of Thoughts",
+        "insight": "多路径推理提升准确率37%",
+        "source": "GitHub"
+      }
+    ],
+    "configs": [
+      {
+        "id": "config_20260209_150758_366",
+        "timestamp": "2026-02-09T15:07:58.496388",
+        "type": "CONFIG",
+        "name": "memory_mode",
+        "old_value": "text",
+        "new_value": "json",
+        "reason": "提升查询效率"
+      }
+    ],
+    "conversations": [
+      {
+        "id": "conv_20260209_150758_346",
+        "timestamp": "2026-02-09T15:07:58.497492",
+        "type": "CONVERSATION",
+        "user": "熊雷",
+        "message": "创建结构化记忆",
+        "response": "已创建结构化记忆系统"
+      }
+    ]
+  }
+}

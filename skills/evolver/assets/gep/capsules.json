@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "capsules": [
+    {
+      "type": "Capsule",
+      "schema_version": "1.5.0",
+      "id": "capsule_1770600014186",
+      "trigger": [
+        "log_error",
+        "memory_missing",
+        "user_missing"
+      ],
+      "gene": "gene_gep_repair_from_errors",
+      "summary": "固化首次循环运行的优化",
+      "confidence": 0.85,
+      "blast_radius": {
+        "files": 1,
+        "lines": 106
+      },
+      "outcome": {
+        "status": "success",
+        "score": 0.85
+      },
+      "success_streak": 1,
+      "env_fingerprint": {
+        "node_version": "v25.5.0",
+        "platform": "linux",
+        "arch": "x64",
+        "os_release": "6.8.0-63-generic",
+        "evolver_version": "1.7.0",
+        "cwd": "/home/admin/.openclaw/workspace/skills/evolver",
+        "captured_at": "2026-02-09T01:20:13.751Z"
+      },
+      "a2a": {
+        "eligible_to_broadcast": false
+      },
+      "asset_id": "sha256:95bfec58cd2b2c608117c0e62c9e2b5b61b8da4651e39b6b2711dc5327e97fef"
+    }
+  ]
+}

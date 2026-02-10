@@ -1,0 +1,31 @@
+{
+  "name": "openclaw-cognitive-architecture",
+  "version": "2.0.0",
+  "description": "Advanced cognitive architecture components for OpenClaw agents including memory systems, reasoning engines, and task coordination capabilities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node examples/demo.js",
+    "demo": "node examples/demo.js"
+  },
+  "keywords": [
+    "openclaw",
+    "ai",
+    "cognitive-architecture",
+    "multi-agent",
+    "memory-system",
+    "reasoning-engine",
+    "artificial-intelligence",
+    "machine-learning",
+    "agent-framework"
+  ],
+  "author": "OpenClaw Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[YOUR_USERNAME]/cognitive-architecture-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/[YOUR_USERNAME]/cognitive-architecture-skill/issues"
+  },
+  "homepage": "https://github.com/[YOUR_USERNAME]/cognitive-architecture-skill#readme"
+}

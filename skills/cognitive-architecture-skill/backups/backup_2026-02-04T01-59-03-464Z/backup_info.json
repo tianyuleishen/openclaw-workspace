@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-04T01-59-03-464Z",
+  "fromVersion": "1.0.0",
+  "toVersion": "2.0.0",
+  "backedUpFiles": [
+    "episodic_memories.json",
+    "long_term_memories.json",
+    "short_term_memories.json"
+  ],
+  "backupPath": "/home/admin/.openclaw/workspace/cognitive-architecture-skill/backups/backup_2026-02-04T01-59-03-464Z"
+}

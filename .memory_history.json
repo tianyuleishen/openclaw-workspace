@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": "2026-02-09 12:32",
+    "type": "TEST",
+    "content": "测试全主动记忆保存",
+    "confidence": 0.95,
+    "context": "修复Path错误"
+  }
+]

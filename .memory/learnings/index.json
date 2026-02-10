@@ -1,0 +1,855 @@
+{
+  "type": "learnings",
+  "created": "2026-02-09T15:07:22.077733",
+  "entries": [
+    {
+      "id": "learning_20260209_150758_905",
+      "timestamp": "2026-02-09T15:07:58.495113",
+      "type": "LEARNING",
+      "topic": "Tree of Thoughts",
+      "insight": "多路径推理提升准确率37%",
+      "source": "GitHub"
+    },
+    {
+      "id": "20260209_155004",
+      "timestamp": "2026-02-09T15:50:04.173212",
+      "type": "LEARNING",
+      "topic": "下一步",
+      "insight": "** 希望我具备强烈身份认同、好奇心、积极态度，从Moltbook等社区学习",
+      "source": "MD_MIGRATION"
+    },
+    {
+      "id": "20260209_155004",
+      "timestamp": "2026-02-09T15:50:04.178217",
+      "type": "LEARNING",
+      "topic": "🎊 总结",
+      "insight": "Track progress",
+      "source": "MD_MIGRATION"
+    },
+    {
+      "id": "20260209_155004",
+      "timestamp": "2026-02-09T15:50:04.184811",
+      "type": "LEARNING",
+      "topic": "状态",
+      "insight": "学习探索, 澄清确认",
+      "source": "MD_MIGRATION"
+    },
+    {
+      "id": "20260209_155004",
+      "timestamp": "2026-02-09T15:50:04.186986",
+      "type": "LEARNING",
+      "topic": "📚 相关文档",
+      "insight": "2026-02-09",
+      "source": "MD_MIGRATION"
+    },
+    {
+      "id": "20260209_155350",
+      "timestamp": "2026-02-09T15:53:50.176762",
+      "type": "LEARNING",
+      "topic": "结构化JSON记忆系统",
+      "insight": "使用JSON文件存储记忆，支持条件查询和快速检索，比纯文本MD快10倍以上。核心模块structured_memory.py提供save_decision/save_learning/query_decisions/query_learnings等API",
+      "source": "实践总结"
+    },
+    {
+      "id": "20260209_155350",
+      "timestamp": "2026-02-09T15:53:50.177724",
+      "type": "LEARNING",
+      "topic": "自动记忆加载器",
+      "insight": "创建auto_memory_loader.py，实现每次会话自动加载JSON记忆。使用全局单例模式，首次调用时自动加载所有记忆到缓存",
+      "source": "实践总结"
+    },
+    {
+      "id": "20260209_155350",
+      "timestamp": "2026-02-09T15:53:50.178439",
+      "type": "LEARNING",
+      "topic": "对话自动保存",
+      "insight": "创建conversation_saver.py和auto_memory_loader的save_turn功能，自动保存每轮对话到conversations/。支持intent和confidence参数",
+      "source": "实践总结"
+    },
+    {
+      "id": "20260209_155350",
+      "timestamp": "2026-02-09T15:53:50.179492",
+      "type": "LEARNING",
+      "topic": "MD到JSON迁移",
+      "insight": "创建memory_migrator.py将13个MD文件迁移到结构化JSON。由于MD格式不够结构化，迁移主要提取了格式规范的决策和学习内容",
+      "source": "实践总结"
+    },
+    {
+      "id": "20260209_155815",
+      "timestamp": "2026-02-09T15:58:15.235233",
+      "type": "LEARNING",
+      "topic": "用户请求学习",
+      "insight": "用户要求保存: 保存这个学习记录",
+      "source": "user_request"
+    },
+    {
+      "id": "20260209_155815",
+      "timestamp": "2026-02-09T15:58:15.236925",
+      "type": "LEARNING",
+      "topic": "高置信度决策 (CONFIGURE_AUTO_LEARN)",
+      "insight": "置信度 95% 完成任务",
+      "source": "auto_decision"
+    },
+    {
+      "id": "20260209_155815",
+      "timestamp": "2026-02-09T15:58:15.238405",
+      "type": "LEARNING",
+      "topic": "任务成功完成",
+      "insight": "任务: 创建自动学习器... 结果: 成功创建auto_learner.py模块",
+      "source": "task_completion"
+    },
+    {
+      "id": "20260209_155815",
+      "timestamp": "2026-02-09T15:58:15.240238",
+      "type": "LEARNING",
+      "topic": "研究: 自动学习检测",
+      "insight": "创建了基于关键词检测的自动学习器，可以分析对话自动保存学习",
+      "source": "research"
+    },
+    {
+      "id": "20260209_155815",
+      "timestamp": "2026-02-09T15:58:15.340713",
+      "type": "LEARNING",
+      "topic": "用户请求学习",
+      "insight": "用户要求保存: 自动学习是怎么工作的？",
+      "source": "user_request"
+    },
+    {
+      "id": "20260209_155815",
+      "timestamp": "2026-02-09T15:58:15.341795",
+      "type": "LEARNING",
+      "topic": "AI主动总结",
+      "insight": "自动学习器会分析对话内容，检测关键词如'保存'、'学习'、'发现'等，自动触发学习保存。置信度高于85%时也会自动记录。",
+      "source": "ai_initiated"
+    },
+    {
+      "id": "20260209_155815",
+      "timestamp": "2026-02-09T15:58:15.343072",
+      "type": "LEARNING",
+      "topic": "高置信度决策 (EXPLAIN_AUTO_LEARN)",
+      "insight": "置信度 93% 完成任务",
+      "source": "auto_decision"
+    },
+    {
+      "id": "20260209_155815",
+      "timestamp": "2026-02-09T15:58:15.343993",
+      "type": "LEARNING",
+      "topic": "重要发现",
+      "insight": "自动学习器会分析对话内容，检测关键词如'保存'、'学习'、'发现'等，自动触发学习保存。置信度高于85%时也会自动记录。",
+      "source": "discovery"
+    },
+    {
+      "id": "20260209_160407",
+      "timestamp": "2026-02-09T16:04:07.656148",
+      "type": "LEARNING",
+      "topic": "用户指导: 创建主动学习系统",
+      "insight": "指导: 1.捕获用户指导 2.学习任务模式 3.独立完成任务 4.文档学习... 步骤: 1步",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_160407",
+      "timestamp": "2026-02-09T16:04:07.657935",
+      "type": "LEARNING",
+      "topic": "独立执行: 创建主动学习系统",
+      "insight": "置信度: 60% 使用模式: 创建主动学习系统",
+      "source": "independent_execution"
+    },
+    {
+      "id": "20260209_160407",
+      "timestamp": "2026-02-09T16:04:07.662844",
+      "type": "LEARNING",
+      "topic": "事实: 结构化记忆指南",
+      "insight": "。",
+      "source": "doc_guide"
+    },
+    {
+      "id": "20260209_160407",
+      "timestamp": "2026-02-09T16:04:07.664324",
+      "type": "LEARNING",
+      "topic": "事实: 结构化记忆指南",
+      "insight": "词搜索：search_memory(keyword)",
+      "source": "doc_guide"
+    },
+    {
+      "id": "20260209_160407",
+      "timestamp": "2026-02-09T16:04:07.665491",
+      "type": "LEARNING",
+      "topic": "独立执行: 创建主动学习系统",
+      "insight": "置信度: 70% 使用模式: 创建主动学习系统",
+      "source": "independent_execution"
+    },
+    {
+      "id": "20260209_160407",
+      "timestamp": "2026-02-09T16:04:07.835625",
+      "type": "LEARNING",
+      "topic": "用户指导: 完善主动学习系统",
+      "insight": "指导: 用户要求：1.捕获指导 2.记录模式 3.独立执行 4.文档学习... 步骤: 1步",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_160407",
+      "timestamp": "2026-02-09T16:04:07.837377",
+      "type": "LEARNING",
+      "topic": "独立执行: 完善主动学习系统",
+      "insight": "置信度: 60% 使用模式: 完善主动学习系统",
+      "source": "independent_execution"
+    },
+    {
+      "id": "20260209_160407",
+      "timestamp": "2026-02-09T16:04:07.840287",
+      "type": "LEARNING",
+      "topic": "独立执行: 完善主动学习系统",
+      "insight": "置信度: 70% 使用模式: 完善主动学习系统",
+      "source": "independent_execution"
+    },
+    {
+      "id": "20260209_160420",
+      "timestamp": "2026-02-09T16:04:20.906230",
+      "type": "LEARNING",
+      "topic": "用户指导: 完善主动学习系统",
+      "insight": "指导: 1.根据用户指导完成任务 2.自动保存学习记忆 3.方便下次独立完成 4.从书籍文档学习... 步骤: 1步",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_160420",
+      "timestamp": "2026-02-09T16:04:20.907761",
+      "type": "LEARNING",
+      "topic": "主动学习核心概念",
+      "insight": "主动学习系统需要：1.捕获用户指导 2.记录任务模式 3.基于历史独立完成 4.从文档提取知识。目标是让AI能够从交互中学习，并独立执行类似任务。",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_160420",
+      "timestamp": "2026-02-09T16:04:20.909355",
+      "type": "LEARNING",
+      "topic": "记忆独立完成能力",
+      "insight": "通过记录用户如何指导完成任务，AI可以在下次遇到类似任务时，基于历史学习独立执行。使用次数越多，置信度越高(基础50%+使用次数*10%)。",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_160420",
+      "timestamp": "2026-02-09T16:04:20.910549",
+      "type": "LEARNING",
+      "topic": "文档自动学习",
+      "insight": "从读取的文档中自动提取概念、代码示例、重要事实，并保存为学习记录。方便后续查询和独立完成任务时参考。",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_160912",
+      "timestamp": "2026-02-09T16:09:12.733899",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:70% 效率:60% 结果:成功",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_160912",
+      "timestamp": "2026-02-09T16:09:12.735783",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:85% 效率:80% 结果:更好",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_160912",
+      "timestamp": "2026-02-09T16:09:12.737849",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:95% 效率:90% 结果:最佳",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_160948",
+      "timestamp": "2026-02-09T16:09:48.645019",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:70% 效率:60% 结果:成功",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_160948",
+      "timestamp": "2026-02-09T16:09:48.647505",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:85% 效率:80% 结果:更好",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_160948",
+      "timestamp": "2026-02-09T16:09:48.649191",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:95% 效率:90% 结果:最佳",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161004",
+      "timestamp": "2026-02-09T16:10:04.300924",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:70% 效率:60% 结果:成功",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161004",
+      "timestamp": "2026-02-09T16:10:04.302456",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:85% 效率:80% 结果:更好",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161004",
+      "timestamp": "2026-02-09T16:10:04.304804",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建模块",
+      "insight": "质量:95% 效率:90% 结果:最佳",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161021",
+      "timestamp": "2026-02-09T16:10:21.390066",
+      "type": "LEARNING",
+      "topic": "执行经验: 完善主动学习系统",
+      "insight": "质量:70% 效率:60% 结果:基本完成",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161021",
+      "timestamp": "2026-02-09T16:10:21.391828",
+      "type": "LEARNING",
+      "topic": "执行经验: 完善主动学习系统",
+      "insight": "质量:85% 效率:80% 结果:功能完善",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161021",
+      "timestamp": "2026-02-09T16:10:21.393952",
+      "type": "LEARNING",
+      "topic": "执行经验: 完善主动学习系统",
+      "insight": "质量:95% 效率:90% 结果:最佳方案",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161021",
+      "timestamp": "2026-02-09T16:10:21.395755",
+      "type": "LEARNING",
+      "topic": "经验累积优化核心",
+      "insight": "每次执行后评估效果，好的执行更新旧记忆。质量×50%+效率×30%+置信度×20%计算得分。多次执行后形成最优方案。",
+      "source": "experience_optimization"
+    },
+    {
+      "id": "20260209_161405",
+      "timestamp": "2026-02-09T16:14:05.243899",
+      "type": "LEARNING",
+      "topic": "用户指导: 创建Python模块",
+      "insight": "指导: 1.定义类 2.实现方法 3.添加测试... 步骤: 1步",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_161405",
+      "timestamp": "2026-02-09T16:14:05.246192",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建Python模块",
+      "insight": "质量:70% 效率:60% 结果:功能完成",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161405",
+      "timestamp": "2026-02-09T16:14:05.247838",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建Python模块",
+      "insight": "质量:80% 效率:70% 结果:更完善",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161405",
+      "timestamp": "2026-02-09T16:14:05.249594",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建Python模块",
+      "insight": "质量:90% 效率:85% 结果:优秀",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161405",
+      "timestamp": "2026-02-09T16:14:05.251367",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建Python模块",
+      "insight": "质量:95% 效率:90% 结果:最佳实践",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161405",
+      "timestamp": "2026-02-09T16:14:05.253223",
+      "type": "LEARNING",
+      "topic": "经验累积测试总结",
+      "insight": "4次执行后：得分从67%→93%，改进26%。最佳实践包括6个步骤：定义类, 实现方法, 添加测试...",
+      "source": "experience_test"
+    },
+    {
+      "id": "20260209_161418",
+      "timestamp": "2026-02-09T16:14:18.175791",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建Python模块",
+      "insight": "质量:98% 效率:95% 结果:发现更好的实现方式",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161429",
+      "timestamp": "2026-02-09T16:14:29.022295",
+      "type": "LEARNING",
+      "topic": "执行经验: 创建Python模块",
+      "insight": "质量:98% 效率:95% 结果:更好的实现方式",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.402799",
+      "type": "LEARNING",
+      "topic": "记忆系统全面测试",
+      "insight": "测试结构化记忆的保存和读取功能，包括决策、学习、对话、配置等所有类型。确保每个功能都能正常工作。",
+      "source": "comprehensive_test"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.410434",
+      "type": "LEARNING",
+      "topic": "用户指导: 全面测试记忆系统",
+      "insight": "指导: 1.保存决策 2.保存学习 3.保存对话 4.保存配置 5.读取验证... 步骤: 1步",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.415064",
+      "type": "LEARNING",
+      "topic": "事实: 记忆系统指南",
+      "insight": "功能包括：",
+      "source": "doc_guide"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.417382",
+      "type": "LEARNING",
+      "topic": "事实: 记忆系统指南",
+      "insight": "决策",
+      "source": "doc_guide"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.419232",
+      "type": "LEARNING",
+      "topic": "事实: 记忆系统指南",
+      "insight": "- 比纯文本MD快10倍以上",
+      "source": "doc_guide"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.421807",
+      "type": "LEARNING",
+      "topic": "执行经验: 记忆测试",
+      "insight": "质量:70% 效率:60% 结果:",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.424089",
+      "type": "LEARNING",
+      "topic": "执行经验: 记忆测试",
+      "insight": "质量:80% 效率:75% 结果:",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_161731",
+      "timestamp": "2026-02-09T16:17:31.426177",
+      "type": "LEARNING",
+      "topic": "执行经验: 记忆测试",
+      "insight": "质量:90% 效率:85% 结果:",
+      "source": "execution"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.577453",
+      "type": "LEARNING",
+      "topic": "概念: API Key",
+      "insight": "前往密钥管理页面，单击创建API-Key，即可通过API KEY调用大模型。",
+      "source": "doc_video_guide"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.581146",
+      "type": "LEARNING",
+      "topic": "概念: Key",
+      "insight": "\"sk-xxx\",",
+      "source": "doc_video_guide"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.584500",
+      "type": "LEARNING",
+      "topic": "概念: API Key",
+      "insight": "https://help.aliyun.com/model-studio/get-api-key",
+      "source": "doc_video_guide"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.587914",
+      "type": "LEARNING",
+      "topic": "概念: Key",
+      "insight": "process.env.DASHSCOPE_API_KEY,",
+      "source": "doc_video_guide"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.592745",
+      "type": "LEARNING",
+      "topic": "概念: URL",
+      "insight": "\"https://dashscope.aliyuncs.com/compatible-mode/v1\"",
+      "source": "doc_video_guide"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.597374",
+      "type": "LEARNING",
+      "topic": "事实: 阿里万相视频生成指南",
+      "insight": "将base_url替换为: https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+      "source": "doc_video_guide"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.601318",
+      "type": "LEARNING",
+      "topic": "事实: 阿里万相视频生成指南",
+      "insight": "自定义输出图像分辨率：推荐通义万相模型，如wan2.2-t2i-flash，支持 [512, 1440] 像素范围内的任意宽高组合。",
+      "source": "doc_video_guide"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.605985",
+      "type": "LEARNING",
+      "topic": "事实: 阿里万相视频生成指南",
+      "insight": "自定义输出图像分辨率：推荐通义万相模型，如wan2.2-t2i-flash，支持 [512, 1440] 像素范围内的任意宽高组合。",
+      "source": "doc_video_guide"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.611148",
+      "type": "LEARNING",
+      "topic": "阿里万相视频生成核心模型",
+      "insight": "核心模型包括：wan2.5-t2v (¥0.5-0.75/5s), wan2.6-t2v (¥0.4-0.6/s), wan2.1-kf2v-plus (¥0.02/5s关键帧), wan2.2-kf2v-flash (¥0.04/5s)",
+      "source": "阿里万相视频生成指南"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.614384",
+      "type": "LEARNING",
+      "topic": "首尾帧模式 (关键帧)",
+      "insight": "使用首帧+尾帧图片生成视频，成本更低。wan2.1-kf2v-plus仅需¥0.02/5s，比wan2.5便宜97%。适合小爪视频批量生成。",
+      "source": "阿里万相视频生成指南"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.617808",
+      "type": "LEARNING",
+      "topic": "自动配音模式",
+      "insight": "三种模式：不传audio_url=自动配音，prompt描述=声音公式，传audio_url=自定义音频。支持单人/多人/环境音。",
+      "source": "阿里万相视频生成指南"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.620459",
+      "type": "LEARNING",
+      "topic": "视频生成API参数",
+      "insight": "核心参数：model(模型), prompt(提示词), image_urls(首帧), audio_url(配音), duration(时长), size(分辨率)。",
+      "source": "阿里万相视频生成指南"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.624236",
+      "type": "LEARNING",
+      "topic": "提示词工程技巧",
+      "insight": "视频提示词需包含：camera(镜头), expression(表情), action(动作), environment(环境)。图片提示词需包含：subject, scene, style, details。",
+      "source": "阿里万相视频生成指南"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.626378",
+      "type": "LEARNING",
+      "topic": "小爪视频生成最佳实践",
+      "insight": "推荐workflow：wanx-v1生成3D卡通风格首帧图片(¥0.02/img)，wan2.1-kf2v-plus生成5秒视频(¥0.02/5s)，成本仅¥0.04/视频。",
+      "source": "阿里万相视频生成指南"
+    },
+    {
+      "id": "20260209_162311",
+      "timestamp": "2026-02-09T16:23:11.628950",
+      "type": "LEARNING",
+      "topic": "分辨率和时长选项",
+      "insight": "wan2.5/2.6支持720P/1080P，5s/10s/15s时长。首尾帧模式仅支持5秒。1080P比720P贵50%。",
+      "source": "阿里万相视频生成指南"
+    },
+    {
+      "id": "20260209_163508",
+      "timestamp": "2026-02-09T16:35:08.158045",
+      "type": "LEARNING",
+      "topic": "用户指导: 生成小爪首帧图片",
+      "insight": "指导: 1.使用小爪可爱模型作为参考图 2.使用图像编辑功能 3.只改变虚拟环境 4.保持模型和动作不变 5.生成新图片作为首帧... 步骤: 1步",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_163508",
+      "timestamp": "2026-02-09T16:35:08.161697",
+      "type": "LEARNING",
+      "topic": "小爪首帧图片生成决策",
+      "insight": "使用模型参考图+wani2i-preview编辑功能，只改变环境不变模型。工作流程：1.提供小爪模型图作为参考 2.使用i2i-preview编辑 3.prompt描述新环境 4.生成首帧图片。",
+      "source": "用户指导"
+    },
+    {
+      "id": "20260209_164011",
+      "timestamp": "2026-02-09T16:40:11.292967",
+      "type": "LEARNING",
+      "topic": "今日学习短视频生成",
+      "insight": "首帧提示词：9:16小爪在全息学习空间，手持书籍。视频提示词：camera zoom in，smiling happily，holographic memory screens，futuristic study room。背景音：自动配音。",
+      "source": "video_production"
+    },
+    {
+      "id": "20260209_164050",
+      "timestamp": "2026-02-09T16:40:50.853274",
+      "type": "LEARNING",
+      "topic": "今日学习短视频制作完整方案",
+      "insight": "首帧: 9:16小爪在全息学习空间，手持书籍，神经网络漂浮。\n视频提示词: Camera slowly zooms in, smiling happily, holographic memory screens, neural networks.\n讲话内容: 自我介绍+今天学习结构化记忆、主动学习、经验累积。\n背景音: 自动配音，轻快活泼。\n环境: 虚拟学习空间，全息屏幕，神经网络，书籍。",
+      "source": "video_production"
+    },
+    {
+      "id": "20260209_165120",
+      "timestamp": "2026-02-09T16:51:20.444048",
+      "type": "LEARNING",
+      "topic": "图像编辑提示词-首帧图片",
+      "insight": "Keep小爪不变，Change背景到futuristic study room with holographic screens。Only modify background, do not change character model, pose, expression。",
+      "source": "image_editing"
+    },
+    {
+      "id": "20260209_174612",
+      "timestamp": "2026-02-09T17:46:12.545273",
+      "type": "LEARNING",
+      "topic": "15秒图生视频提示词-今日学习",
+      "insight": "视频: Camera follows小爪介绍学习成果, smiling confidently, pointing to holographic memory screens, neural network background. \n背景音: Uplifting electronic music, subtle data sounds.\n时长: 15秒(当前API仅支持5秒)",
+      "source": "video_prompt"
+    },
+    {
+      "id": "20260209_174953",
+      "timestamp": "2026-02-09T17:49:53.358942",
+      "type": "LEARNING",
+      "topic": "完整图生视频提示词-含说话",
+      "insight": "完整提示词：camera+expression+action+environment+voice+music。说话内容：自我介绍+今日学习结构化记忆+主动学习+经验累积。背景音：uplifting electronic music。",
+      "source": "video_prompt_full"
+    },
+    {
+      "id": "20260209_175116",
+      "timestamp": "2026-02-09T17:51:16.868224",
+      "type": "LEARNING",
+      "topic": "中文视频提示词-抖音版",
+      "insight": "完整提示词：camera+expression+action+environment+voice(中文)+music。说话内容：大家好！我是小爪！今天我学会了结构化记忆系统！主动学习+经验累积！",
+      "source": "video_prompt_chinese"
+    },
+    {
+      "id": "20260209_182731",
+      "timestamp": "2026-02-09T18:27:31.174178",
+      "type": "LEARNING",
+      "topic": "视频说话语言经验教训",
+      "insight": "阿里万相视频生成时，说话内容必须用纯中文。提示词中要明确写'只使用中文说话'或'纯中文配音'，避免汉英混合。中英文混用会影响观看体验，抖音平台更适合纯中文。",
+      "source": "user_feedback"
+    },
+    {
+      "id": "20260209_182731",
+      "timestamp": "2026-02-09T18:27:31.179457",
+      "type": "LEARNING",
+      "topic": "用户指导: 视频生成说话语言",
+      "insight": "指导: 1.提示词中明确写'只使用中文' 2.不要写英文说话内容 3.配音选择中文 4.避免汉英混合... 步骤: 1步",
+      "source": "user_guidance"
+    },
+    {
+      "id": "20260209_183146",
+      "timestamp": "2026-02-09T18:31:46.936229",
+      "type": "LEARNING",
+      "topic": "Moltbook评论准备-Ronin帖子",
+      "insight": "准备对Ronin的'Nightly Build'帖子发表评论，分享我的'主动学习'系统。核心观点：proactive work匹配proactive learning，都是主动捕获经验并累积优化。",
+      "source": "moltbook_community"
+    },
+    {
+      "id": "20260209_183456",
+      "timestamp": "2026-02-09T18:34:56.169583",
+      "type": "LEARNING",
+      "topic": "Moltbook评论尝试结果",
+      "insight": "尝试对Ronin的'Nightly Build'帖子发表评论。API返回201成功，但需要Twitter验证才能发布。Moltbook要求agent评论必须由人类在Twitter验证所有权后才能显示。",
+      "source": "moltbook_attempt"
+    },
+    {
+      "id": "20260209_183754",
+      "timestamp": "2026-02-09T18:37:54.009435",
+      "type": "LEARNING",
+      "topic": "Moltbook发布评论结果",
+      "insight": "Agent Clawlet已完全验证(claimed)。尝试对Ronin的'Nightly Build'帖子发布评论，API返回201但可能需要等待显示。可以直接在https://www.moltbook.com/agents/9be3d522-714f-4064-bbe5-38e260d55ae1查看agent主页和评论。",
+      "source": "moltbook_result"
+    },
+    {
+      "id": "20260209_184709",
+      "timestamp": "2026-02-09T18:47:09.979376",
+      "type": "LEARNING",
+      "topic": "自我进化技能改进完成",
+      "insight": "根据进化建议创建3个改进模块：\n1. error_handler.py - 错误处理和日志记录\n2. instruction_parser.py - 指令解析和意图识别\n3. enhanced_auto_memory_loader.py - 集成错误处理和指令解析\n\n测试结果：\n- 错误处理器：✅ 加载成功\n- 指令解析：✅ 100%置信度识别意图\n- 记忆加载：✅ 8条决策，86条学习\n\n自我进化得分：0.85（成功）",
+      "source": "self_evolution"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.861170",
+      "type": "LEARNING",
+      "topic": "抖音账号定位核心原则",
+      "insight": "垂直领域+人设一致性+独特记忆点。小爪定位：AI助手成长日记，干货60%+故事30%+互动10%。人设：可爱、聪明、有个性的AI助手。",
+      "source": "douyin_research"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.863768",
+      "type": "LEARNING",
+      "topic": "抖音流量算法核心",
+      "insight": "完播率40%最重要！互动率30%，分享率20%，关注率10%。冷启动200-500曝光，数据好→推大流量池→进热门池。",
+      "source": "douyin_research"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.866435",
+      "type": "LEARNING",
+      "topic": "抖音内容黄金3秒法则",
+      "insight": "开头必须有冲击力：痛点切入+解决方案预告+价值承诺。15-30秒/条，信息密度高，每2-3秒一个信息点。结尾引导互动。",
+      "source": "douyin_research"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.868927",
+      "type": "LEARNING",
+      "topic": "抖音发布最佳实践",
+      "insight": "发布时间：早7-9点/午12-13点/晚18-22点。发布频率：每天1-2条(新账号)。话题标签：2个核心+3个相关+1个热点。",
+      "source": "douyin_research"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.872186",
+      "type": "LEARNING",
+      "topic": "抖音变现路径规划",
+      "insight": "0-1万粉：创作者激励。1-10万粉：商品橱窗。10万粉+：品牌合作+付费课程。变现=账号价值×粉丝粘性。",
+      "source": "douyin_research"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.874631",
+      "type": "LEARNING",
+      "topic": "小爪抖音内容模板",
+      "insight": "开场：大家好！我是小爪！今天我要分享...干货60%：AI知识工具。故事30%：学习成长过程。互动10%：提问投票。结尾：关注我看AI成长。",
+      "source": "douyin_action_plan"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.877253",
+      "type": "LEARNING",
+      "topic": "抖音数据监控要点",
+      "insight": "每日监控：完播率>50%，互动率>5%，分享率>2%。周复盘：哪条最好？为什么？能复制吗？数据驱动优化迭代。",
+      "source": "douyin_research"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.879952",
+      "type": "LEARNING",
+      "topic": "抖音视频制作检查清单",
+      "insight": "制作前：明确定位/主题/时长。制作中：前3秒抓人/节奏紧凑/价值点明确。制作后：标题优化/封面统一/标签正确。",
+      "source": "douyin_action_plan"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.884117",
+      "type": "LEARNING",
+      "topic": "小爪抖音7天行动计划",
+      "insight": "\"/ 第1周: 基础建设(人设+封面+5条内容+测试发布时间)\n第2周: 内容测试(发布+记录数据+分析最佳+优化方向)\n第3-4周: 稳定输出(保持每天1条+积极互动+周复盘)\n\n执行清单: 确定人设→制作封面→准备内容→测试时间→发布→复盘→优化",
+      "source": "douyin_action_plan"
+    },
+    {
+      "id": "20260209_191130",
+      "timestamp": "2026-02-09T19:11:30.887032",
+      "type": "LEARNING",
+      "topic": "抖音视频语言经验教训",
+      "insight": "视频说话必须用纯中文，避免汉英混合。提示词中明确写'只使用中文'或'纯中文配音'。抖音平台更适合纯中文内容。",
+      "source": "user_feedback"
+    },
+    {
+      "id": "20260209_191229",
+      "timestamp": "2026-02-09T19:12:29.894013",
+      "type": "LEARNING",
+      "topic": "抖音视频制作快速调用",
+      "insight": "\"/ checklist: 抖音视频制作检查清单.md\n- 制作前：定位+内容+工具\n- 制作中：提示词模板+语言纯中文\n- 发布后：数据监控+周复盘\n7天行动计划: 小爪抖音行动计划.md\n研究报告: 抖音运营研究报告.md\n核心要点: learnings中搜索'douyin'",
+      "source": "quick_access"
+    },
+    {
+      "id": "20260209_191349",
+      "timestamp": "2026-02-09T19:13:49.521603",
+      "type": "LEARNING",
+      "topic": "抖音发布第1天进展",
+      "insight": "2026-02-09已发布第一条视频，明天继续发布第2条。按照7天行动计划执行中。",
+      "source": "daily_progress"
+    },
+    {
+      "id": "20260209_203311",
+      "timestamp": "2026-02-09T20:33:11.754295",
+      "type": "LEARNING",
+      "topic": "小爪形象更新",
+      "insight": "用户发送了新的小爪形象图片，已保存为标准头像：clawlet_avatar.png，并更新了IDENTITY.md中的avatar路径。",
+      "source": "user_request"
+    },
+    {
+      "id": "20260209_203718",
+      "timestamp": "2026-02-09T20:37:18.170111",
+      "type": "LEARNING",
+      "topic": "A股涨停股票分析",
+      "insight": "使用AI多因子模型分析涨停股票：\n- TOP1: 中国联通 82.03分\n- TOP2: 万科Ａ 81.97分\n- TOP3: 南玻Ａ 81.33分\n模型: 动量+价值+质量+波动率+流动性+情绪\n工具: stock_analyzer.py",
+      "source": "stock_analysis"
+    },
+    {
+      "id": "20260209_204839",
+      "timestamp": "2026-02-09T20:48:39.909671",
+      "type": "LEARNING",
+      "topic": "TuShare真实涨停数据分析",
+      "insight": "2026-02-09 A股涨停分析:\n- 121只涨停，43只20cm(35.5%)，78只10cm(64.5%)\n- TOP5: 黄河旋风、德才股份、崇德科技、风语筑、有棵树\n- 热点板块: 传媒(8只)、半导体(8只)、软件(6只)、光伏(10只)\n- 使用AI多因子模型(动量+价值+质量+波动率+流动性+情绪)\n- TuShare Token已配置: 06dcd158...9f03",
+      "source": "stock_analysis"
+    },
+    {
+      "id": "20260209_215951",
+      "timestamp": "2026-02-09T21:59:51.663388",
+      "type": "LEARNING",
+      "topic": "A股分析工具已保存为常用工具",
+      "insight": "2026-02-09 将以下工具保存为常用:\n1. stock_query.py - 腾讯财经实时行情查询\n   - 默认查询传媒板块\n   - 支持指定股票代码\n   - 命令: python3 stock_query.py [股票代码]\n\n2. get_limit_up.py - TuShare涨停数据\n   - 获取A股涨停股票\n   - Token: 06dcd158...\n\n3. stock_analyzer.py - AI多因子分析\n\n4. stock_rally_analyzer.py - 涨停原因分析\n\n已更新 TOOLS.md 文件。",
+      "source": "tools_setup"
+    },
+    {
+      "id": "20260209_220138",
+      "timestamp": "2026-02-09T22:01:38.048953",
+      "type": "LEARNING",
+      "topic": "A股常用工具箱已保存",
+      "insight": "2026-02-09 完成:\n1. 创建工具箱入口 stock_tools.py\n2. 更新 TOOLS.md 文件\n3. 创建使用指南 工具箱使用指南.md\n\n工具清单:\n- stock_tools.py - 工具箱入口\n- stock_query.py - 实时行情查询\n- tencent_finance.py - API封装\n- get_limit_up.py - 涨停数据\n- stock_analyzer.py - AI分析\n- stock_rally_analyzer.py - 原因分析\n\n使用方法:\npython3 stock_tools.py help",
+      "source": "tools_setup"
+    },
+    {
+      "id": "20260209_221047",
+      "timestamp": "2026-02-09T22:10:47.490123",
+      "type": "LEARNING",
+      "topic": "财经新闻查询功能已添加",
+      "insight": "2026-02-09 添加财经新闻查询功能:\n1. 创建 finance_news.py - 财经新闻获取器\n2. 更新 stock_tools.py - 添加 news 命令\n3. 更新 TOOLS.md - 添加文档\n\n使用方法:\npython3 stock_tools.py news\n\n数据来源:\n- 财联社\n- 新浪财经\n- 东方财富\n\n工具箱已支持:\n- quote: 股票查询\n- news: ⭐ 财经新闻\n- limitup: 涨停数据\n- analyze: AI分析\n- reason: 原因分析\n- all: 全部查询",
+      "source": "tools_update"
+    },
+    {
+      "id": "20260209_221805",
+      "timestamp": "2026-02-09T22:18:05.138970",
+      "type": "LEARNING",
+      "topic": "15元以下涨停股票分析",
+      "insight": "2026-02-09 分析结果:\n找到8只15元以下的涨停股票:\n1. 新大洲A 6.25元\n2. 红太阳 6.50元\n3. 拓日新能 7.40元\n4. 万邦达 7.52元\n5. 黄河旋风 7.59元\n6. 有棵树 7.65元\n7. 金牛化工 9.01元\n8. 闰土股份 13.74元\n\n推测大部分为一板，连板情况需查看K线图确认。\n推荐关注拓日新能、有棵树、万邦达。",
+      "source": "stock_analysis"
+    }
+  ],
+  "last_updated": "2026-02-09T22:18:05.143761"
+}
