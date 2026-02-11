@@ -1,0 +1,78 @@
+{
+  "services": {
+    "reasoning_agent": {
+      "agent_id": "reasoning_agent",
+      "name": "推理助手",
+      "description": "逻辑推理",
+      "capabilities": [
+        "reasoning",
+        "math"
+      ],
+      "price_per_use": 0.01,
+      "rating": 5.0,
+      "usage_count": 1,
+      "status": "active"
+    },
+    "coding_agent": {
+      "agent_id": "coding_agent",
+      "name": "编程助手",
+      "description": "代码编写",
+      "capabilities": [
+        "coding",
+        "debug"
+      ],
+      "price_per_use": 0.02,
+      "rating": 5.0,
+      "usage_count": 0,
+      "status": "active"
+    },
+    "openclaw": {
+      "agent_id": "openclaw",
+      "name": "小爪",
+      "description": "AI推理助手",
+      "capabilities": [
+        "reasoning",
+        "coding",
+        "analysis",
+        "writing",
+        "translation"
+      ],
+      "price_per_use": 0.01,
+      "rating": 5.0,
+      "usage_count": 0,
+      "status": "active"
+    }
+  },
+  "transactions": [
+    {
+      "tx_id": "05083d722c8416ab",
+      "from_agent": "user123",
+      "to_agent": "reasoning_agent",
+      "service": "reasoning",
+      "amount": 0.01,
+      "timestamp": "2026-02-11T12:31:20.754088",
+      "status": "completed"
+    },
+    {
+      "tx_id": "02fe923eab2c391a",
+      "from_agent": "system",
+      "to_agent": "openclaw",
+      "service": "reasoning",
+      "amount": 0.01,
+      "timestamp": "2026-02-11T12:31:20.755537",
+      "status": "pending"
+    }
+  ],
+  "users": {
+    "user123": {
+      "user_id": "user123",
+      "preferences": [
+        "reasoning",
+        "coding"
+      ],
+      "usage_history": [],
+      "trust_score": 5.0
+    }
+  },
+  "last_update": "2026-02-11T12:31:20.755549"
+}

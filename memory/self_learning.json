@@ -1,0 +1,52 @@
+{
+  "learnings": [
+    {
+      "content": "遇到'水位'问题，必须检查容器边界！",
+      "category": "lesson",
+      "source": "error_analysis",
+      "timestamp": "2026-02-11T12:24:06.145889",
+      "confidence": 0.9,
+      "verified": true,
+      "usage_count": 1
+    },
+    {
+      "content": "遇到'水位'问题必须考虑容器边界!",
+      "category": "lesson",
+      "source": "error: 棱长30的水位问题",
+      "timestamp": "2026-02-11T12:24:33.438633",
+      "confidence": 0.9,
+      "verified": true,
+      "usage_count": 0
+    },
+    {
+      "content": "目的分析: 先明确目的，再决定手段",
+      "category": "reasoning",
+      "source": "洗车应该开车还是走路？",
+      "timestamp": "2026-02-11T12:24:33.439365",
+      "confidence": 0.85,
+      "verified": false,
+      "usage_count": 0
+    }
+  ],
+  "success_patterns": [
+    {
+      "question": "甲乙丙谁会游泳？",
+      "answer": "乙",
+      "timestamp": "2026-02-11T12:24:33.439120"
+    }
+  ],
+  "error_patterns": [
+    {
+      "question": "棱长30的水位问题",
+      "wrong_answer": "27.6 cm (错误)",
+      "timestamp": "2026-02-11T12:24:06.145876"
+    },
+    {
+      "question": "棱长30的水位问题",
+      "wrong_answer": "27.6cm",
+      "lesson": "遇到'水位'问题必须考虑容器边界!",
+      "timestamp": "2026-02-11T12:24:33.438623"
+    }
+  ],
+  "last_update": "2026-02-11T12:24:33.439903"
+}
