@@ -1,0 +1,76 @@
+{
+  "title": "🦞 推理引擎升级计划 v3.0",
+  "source": "用户提供的AI推理能力提升指南",
+  "date": "2026-02-11",
+  "strategy_areas": [
+    {
+      "area": "1. 数据层面",
+      "actions": [
+        "收集高质量推理数据集（数学题、逻辑谜题）",
+        "标注中间推理步骤(Chain-of-Thought)",
+        "合成数据生成(自动生成推理问题)"
+      ]
+    },
+    {
+      "area": "2. 模型架构",
+      "actions": [
+        "引入外部符号推理模块",
+        "实现思维树(Tree of Thoughts)架构",
+        "添加工作记忆模块"
+      ]
+    },
+    {
+      "area": "3. 训练策略",
+      "actions": [
+        "分阶段训练(预训练→微调)",
+        "课程学习(简单→复杂)",
+        "多任务联合训练"
+      ]
+    },
+    {
+      "area": "4. 知识整合",
+      "actions": [
+        "连接外部知识库",
+        "常识知识注入",
+        "RAG检索增强"
+      ]
+    },
+    {
+      "area": "5. 推理过程优化",
+      "actions": [
+        "强制生成中间推理步骤",
+        "置信度评估",
+        "自我纠正机制"
+      ]
+    },
+    {
+      "area": "6. 评估系统",
+      "actions": [
+        "构建推理基准测试",
+        "过程评估(不仅是答案)",
+        "对抗测试(逻辑陷阱)"
+      ]
+    },
+    {
+      "area": "7. 人机协作",
+      "actions": [
+        "支持多轮对话",
+        "用户可干预推理过程",
+        "动态调整推理路径"
+      ]
+    }
+  ],
+  "github_search": [
+    "Tree of Thoughts",
+    "Graph of Thoughts",
+    "Chain of Thought reasoning",
+    "Neuro-symbolic AI",
+    "ReAct reasoning agents"
+  ],
+  "priority": [
+    "P0: 思维树(Tree of Thoughts)架构",
+    "P1: 置信度评估",
+    "P2: 自我纠正机制",
+    "P3: 多轮对话支持"
+  ]
+}

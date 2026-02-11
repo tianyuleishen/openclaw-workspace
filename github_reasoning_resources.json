@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Tree of Thoughts reasoning",
+    "repo": "kyegomez/tree-of-thoughts",
+    "stars": 4568,
+    "url": "https://github.com/kyegomez/tree-of-thoughts"
+  },
+  {
+    "keyword": "Tree of Thoughts reasoning",
+    "repo": "dave1010/tree-of-thought-prompting",
+    "stars": 813,
+    "url": "https://github.com/dave1010/tree-of-thought-prompting"
+  },
+  {
+    "keyword": "Tree of Thoughts reasoning",
+    "repo": "jieyilong/tree-of-thought-puzzle-solver",
+    "stars": 369,
+    "url": "https://github.com/jieyilong/tree-of-thought-puzzle-solver"
+  },
+  {
+    "keyword": "Graph of Thoughts",
+    "repo": "spcl/graph-of-thoughts",
+    "stars": 2595,
+    "url": "https://github.com/spcl/graph-of-thoughts"
+  },
+  {
+    "keyword": "Graph of Thoughts",
+    "repo": "satellitecomponent/Neurite",
+    "stars": 1985,
+    "url": "https://github.com/satellitecomponent/Neurite"
+  },
+  {
+    "keyword": "Graph of Thoughts",
+    "repo": "wyl-willing/MindMap",
+    "stars": 373,
+    "url": "https://github.com/wyl-willing/MindMap"
+  },
+  {
+    "keyword": "Chain of Thought reasoning",
+    "repo": "amazon-science/mm-cot",
+    "stars": 3990,
+    "url": "https://github.com/amazon-science/mm-cot"
+  },
+  {
+    "keyword": "Chain of Thought reasoning",
+    "repo": "atfortes/Awesome-LLM-Reasoning",
+    "stars": 3539,
+    "url": "https://github.com/atfortes/Awesome-LLM-Reasoning"
+  },
+  {
+    "keyword": "Chain of Thought reasoning",
+    "repo": "FranxYao/chain-of-thought-hub",
+    "stars": 2769,
+    "url": "https://github.com/FranxYao/chain-of-thought-hub"
+  },
+  {
+    "keyword": "ReAct agents",
+    "repo": "FlowiseAI/Flowise",
+    "stars": 49040,
+    "url": "https://github.com/FlowiseAI/Flowise"
+  },
+  {
+    "keyword": "ReAct agents",
+    "repo": "CopilotKit/CopilotKit",
+    "stars": 28674,
+    "url": "https://github.com/CopilotKit/CopilotKit"
+  },
+  {
+    "keyword": "ReAct agents",
+    "repo": "nrwl/nx",
+    "stars": 28117,
+    "url": "https://github.com/nrwl/nx"
+  },
+  {
+    "keyword": "neuro-symbolic reasoning",
+    "repo": "NucleoidAI/Nucleoid",
+    "stars": 723,
+    "url": "https://github.com/NucleoidAI/Nucleoid"
+  },
+  {
+    "keyword": "neuro-symbolic reasoning",
+    "repo": "LAMDASZ-ML/Awesome-LLM-Reasoning-with-NeSy",
+    "stars": 262,
+    "url": "https://github.com/LAMDASZ-ML/Awesome-LLM-Reasoning-with-NeSy"
+  },
+  {
+    "keyword": "neuro-symbolic reasoning",
+    "repo": "AbductiveLearning/ABLkit",
+    "stars": 84,
+    "url": "https://github.com/AbductiveLearning/ABLkit"
+  }
+]
