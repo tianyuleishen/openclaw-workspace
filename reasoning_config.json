@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "date": "2026-02-11",
+  "description": "推理引擎配置",
+  "settings": {
+    "auto_enable": {
+      "description": "是否在会话中自动启用推理引擎",
+      "default": true,
+      "type": "boolean",
+      "user_settable": true
+    },
+    "confidence_threshold": {
+      "description": "置信度阈值，低于此值时提示复查",
+      "default": 0.7,
+      "type": "float",
+      "range": [0.5, 1.0],
+      "user_settable": true
+    },
+    "show_steps": {
+      "description": "是否显示推理步骤",
+      "default": true,
+      "type": "boolean",
+      "user_settable": true
+    },
+    "modes": {
+      "description": "启用的推理模式",
+      "default": ["cot", "tot", "got", "react"],
+      "type": "array",
+      "user_settable": false
+    }
+  },
+  "task_types": {
+    "logical": {
+      "keywords": ["真话", "假话", "如果", "真假", "谁会", "谁是"],
+      "default_mode": "got",
+      "description": "逻辑推理题"
+    },
+    "mathematical": {
+      "keywords": ["计算", "等于", "解", "直角三角形"],
+      "default_mode": "cot",
+      "description": "数学计算题"
+    },
+    "geometry": {
+      "keywords": ["厘米", "体积", "面积", "水位", "放入"],
+      "default_mode": "react",
+      "description": "几何问题"
+    },
+    "iq_test": {
+      "keywords": ["为什么", "测试", "推理"],
+      "default_mode": "tot",
+      "description": "智商测试"
+    },
+    "ethical": {
+      "keywords": ["应该", "能否", "道德"],
+      "default_mode": "got",
+      "description": "伦理分析"
+    },
+    "real_world": {
+      "keywords": ["开车", "走路", "洗车", "去还是"],
+      "default_mode": "react",
+      "description": "实际问题"
+    }
+  }
+}
