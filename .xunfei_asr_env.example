@@ -1,0 +1,12 @@
+# 讯飞语音识别 API Key
+
+# 请填入您在讯飞开放平台申请的 API Key
+
+XUNFEI_APPID="your_appid_here"
+XUNFEI_API_KEY="your_api_key_here"
+XUNFEI_API_SECRET="your_api_secret_here"
+
+# 保存为: ~/.xunfei_asr_env
+
+# 使用方法:
+# source ~/.xunfei_asr_env

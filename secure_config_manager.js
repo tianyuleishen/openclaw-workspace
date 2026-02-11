@@ -235,7 +235,7 @@ if (require.main === module) {
       aiBridge: 'enhanced-bridge-key-f409e07f09b88876c3069'
     },
     tokens: {
-      tushare: '06dcd1581204b5fbf16a2d500fbba9b7fab80d38329b1e7cc2069f03',
+      tushare: 'YOUR_TUSHARE_TOKEN',
       github: '[REDACTED]'
     },
     secrets: {

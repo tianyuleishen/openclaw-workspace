@@ -1,0 +1,15 @@
+{
+  "id": "20260210_105714_e83e3a9d",
+  "timestamp": "2026-02-10T10:57:14.984976",
+  "type": "DECISION",
+  "content": "Intent: test\nAction: process_request\nMessage: 处理用户请求: Test message...",
+  "embedding": null,
+  "metadata": {
+    "intent": "test",
+    "action": "process_request",
+    "context": null
+  },
+  "importance": 0.8,
+  "access_count": 0,
+  "last_accessed": "2026-02-10T10:57:14.984980"
+}

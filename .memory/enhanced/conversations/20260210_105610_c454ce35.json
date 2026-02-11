@@ -1,0 +1,14 @@
+{
+  "id": "20260210_105610_c454ce35",
+  "timestamp": "2026-02-10T10:56:10.483802",
+  "type": "CONVERSATION",
+  "content": "User: Hello, who are you?\nAssistant: I am OpenClaw AI assistant.",
+  "embedding": null,
+  "metadata": {
+    "intent": "greeting",
+    "message_length": 19
+  },
+  "importance": 0.5,
+  "access_count": 0,
+  "last_accessed": "2026-02-10T10:56:10.483805"
+}

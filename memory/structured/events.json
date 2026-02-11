@@ -1,0 +1,145 @@
+{
+  "today": [
+    {
+      "type": "system",
+      "description": "优化对话管理器启动",
+      "data": {
+        "mode": "JSON结构化"
+      },
+      "timestamp": "2026-02-10T15:10:09.165746"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 0",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.166871"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 1",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.168168"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 2",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.169570"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 3",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.170764"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 4",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.172045"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 5",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.175344"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 6",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.176797"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 7",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.178238"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 8",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.179746"
+    },
+    {
+      "type": "message",
+      "description": "测试消息 9",
+      "data": {
+        "entities_found": 0,
+        "response_length": 8
+      },
+      "timestamp": "2026-02-10T15:10:09.181230"
+    },
+    {
+      "type": "task",
+      "description": "设置当前任务",
+      "data": {
+        "task": "视频制作"
+      },
+      "timestamp": "2026-02-10T15:10:09.183786"
+    },
+    {
+      "type": "task",
+      "description": "完成视频脚本制作",
+      "data": {},
+      "timestamp": "2026-02-10T15:14:28.375536"
+    },
+    {
+      "type": "system",
+      "description": "系统优化完成",
+      "data": {},
+      "timestamp": "2026-02-10T15:14:28.377018"
+    },
+    {
+      "type": "test",
+      "description": "测试事件",
+      "data": {
+        "data": "test"
+      },
+      "timestamp": "2026-02-10T15:19:04.215905"
+    },
+    {
+      "type": "note",
+      "description": "用户查询任务状态",
+      "data": {},
+      "timestamp": "2026-02-10T15:22:18.262185"
+    },
+    {
+      "type": "system",
+      "description": "系统检查",
+      "data": {
+        "status": "正常"
+      },
+      "timestamp": "2026-02-10T15:22:18.277585"
+    }
+  ],
+  "recent": []
+}

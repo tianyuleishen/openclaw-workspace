@@ -1,0 +1,15 @@
+{
+  "id": "20260210_105330_bb4227eb",
+  "timestamp": "2026-02-10T10:53:30.476058",
+  "type": "DECISION",
+  "content": "Intent: test_decision\nAction: save_test_memory\nMessage: 测试决策保存功能",
+  "embedding": null,
+  "metadata": {
+    "intent": "test_decision",
+    "action": "save_test_memory",
+    "context": null
+  },
+  "importance": 0.8,
+  "access_count": 0,
+  "last_accessed": "2026-02-10T10:53:30.476072"
+}

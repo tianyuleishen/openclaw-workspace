@@ -1,0 +1,17 @@
+{
+  "id": "20260210_105714_fece8393",
+  "timestamp": "2026-02-10T10:57:14.981899",
+  "type": "DECISION",
+  "content": "Intent: test_decision\nAction: test_action\nMessage: 测试决策保存功能",
+  "embedding": null,
+  "metadata": {
+    "intent": "test_decision",
+    "action": "test_action",
+    "context": {
+      "test": true
+    }
+  },
+  "importance": 0.8,
+  "access_count": 0,
+  "last_accessed": "2026-02-10T10:57:14.981908"
+}

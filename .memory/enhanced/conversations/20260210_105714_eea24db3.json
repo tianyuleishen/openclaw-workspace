@@ -1,0 +1,14 @@
+{
+  "id": "20260210_105714_eea24db3",
+  "timestamp": "2026-02-10T10:57:14.984792",
+  "type": "CONVERSATION",
+  "content": "User: Test message\nAssistant: Test response",
+  "embedding": null,
+  "metadata": {
+    "intent": "test",
+    "message_length": 12
+  },
+  "importance": 0.5,
+  "access_count": 0,
+  "last_accessed": "2026-02-10T10:57:14.984799"
+}

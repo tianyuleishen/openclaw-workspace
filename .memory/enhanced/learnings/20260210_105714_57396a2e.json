@@ -1,0 +1,14 @@
+{
+  "id": "20260210_105714_57396a2e",
+  "timestamp": "2026-02-10T10:57:14.982140",
+  "type": "LEARNING",
+  "content": "Topic: Python\nInsight: Python是一种解释型语言\nSource: Python官方文档",
+  "embedding": null,
+  "metadata": {
+    "topic": "Python",
+    "source": "Python官方文档"
+  },
+  "importance": 0.7,
+  "access_count": 0,
+  "last_accessed": "2026-02-10T10:57:14.982144"
+}

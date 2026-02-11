@@ -32,6 +32,18 @@
     "tecent-finance": {
       "version": "1.0.0",
       "installedAt": 1770644418562
+    },
+    "tavily": {
+      "version": "1.0.0",
+      "installedAt": 1770715568184
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1770715572857
+    },
+    "proactive-agent-1-2-4": {
+      "version": "1.0.0",
+      "installedAt": 1770715578772
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "optimization": {
+    "enabled": true,
+    "memory_system": "structured_json",
+    "cache_enabled": true,
+    "max_context_size": 50000,
+    "compression_threshold": 0.7
+  },
+  "memory": {
+    "type": "structured_json",
+    "structured_dir": "/home/admin/.openclaw/workspace/memory/structured",
+    "legacy_dir": "/home/admin/.openclaw/workspace/memory",
+    "auto_migrate": true
+  },
+  "performance": {
+    "context_cache_ttl": 3600,
+    "entity_cache_size": 100,
+    "event_cache_size": 50,
+    "async_loading": true
+  },
+  "integrated_at": "2026-02-10T15:13:00",
+  "version": "2.0"
+}

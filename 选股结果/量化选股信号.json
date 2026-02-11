@@ -1,0 +1,187 @@
+{
+  "update_time": "2026-02-11T08:13:45.449868",
+  "total_stocks": 16,
+  "results": [
+    {
+      "ts_code": "300043.SZ",
+      "name": "星辉娱乐",
+      "close": 7.52,
+      "pct_chg": 6.9701,
+      "score": 100,
+      "signal": "买入",
+      "buy_amount": 49632.0,
+      "stop_loss": 6.9184,
+      "take_profit": 8.648
+    },
+    {
+      "ts_code": "603598.SH",
+      "name": "引力传媒",
+      "close": 31.3,
+      "pct_chg": 10.0176,
+      "score": 98.14538676607643,
+      "signal": "买入",
+      "buy_amount": 46950.0,
+      "stop_loss": 28.796000000000003,
+      "take_profit": 35.995
+    },
+    {
+      "ts_code": "603103.SH",
+      "name": "横店影视",
+      "close": 40.41,
+      "pct_chg": 9.9891,
+      "score": 90.0,
+      "signal": "买入",
+      "buy_amount": 44450.99999999999,
+      "stop_loss": 37.1772,
+      "take_profit": 46.47149999999999
+    },
+    {
+      "ts_code": "300364.SZ",
+      "name": "中文在线",
+      "close": 42.34,
+      "pct_chg": 20.0113,
+      "score": 89.52522255192879,
+      "signal": "买入",
+      "buy_amount": 46574.00000000001,
+      "stop_loss": 38.9528,
+      "take_profit": 48.691
+    },
+    {
+      "ts_code": "300251.SZ",
+      "name": "光线传媒",
+      "close": 25.56,
+      "pct_chg": 20.0,
+      "score": 85.0,
+      "signal": "买入",
+      "buy_amount": 46008.0,
+      "stop_loss": 23.5152,
+      "take_profit": 29.393999999999995
+    },
+    {
+      "ts_code": "002292.SZ",
+      "name": "博通股份",
+      "close": 10.88,
+      "pct_chg": 10.0101,
+      "score": 85.0,
+      "signal": "买入",
+      "buy_amount": 45696.0,
+      "stop_loss": 10.0096,
+      "take_profit": 12.512
+    },
+    {
+      "ts_code": "600519.SH",
+      "name": "贵州茅台",
+      "close": 1504.8,
+      "pct_chg": -1.322,
+      "score": 77.3526112222493,
+      "signal": "持有",
+      "buy_amount": 0,
+      "stop_loss": 1384.416,
+      "take_profit": 1730.5199999999998
+    },
+    {
+      "ts_code": "300750.SZ",
+      "name": "宁德时代",
+      "close": 364.97,
+      "pct_chg": -1.0439,
+      "score": 73.73276168384503,
+      "signal": "持有",
+      "buy_amount": 36497.0,
+      "stop_loss": 335.77240000000006,
+      "take_profit": 419.7155
+    },
+    {
+      "ts_code": "301231.SZ",
+      "name": "荣信文化",
+      "close": 50.69,
+      "pct_chg": 20.0047,
+      "score": 73.10082063305978,
+      "signal": "买入",
+      "buy_amount": 40552.0,
+      "stop_loss": 46.6348,
+      "take_profit": 58.293499999999995
+    },
+    {
+      "ts_code": "600015.SH",
+      "name": "华夏银行",
+      "close": 6.65,
+      "pct_chg": 0.6051,
+      "score": 68.98609510829712,
+      "signal": "关注",
+      "buy_amount": 41895.0,
+      "stop_loss": 6.118,
+      "take_profit": 7.6475
+    },
+    {
+      "ts_code": "000001.SZ",
+      "name": "平安银行",
+      "close": 11.06,
+      "pct_chg": -0.0903,
+      "score": 55.592566986784234,
+      "signal": "关注",
+      "buy_amount": 38710.0,
+      "stop_loss": 10.1752,
+      "take_profit": 12.719
+    },
+    {
+      "ts_code": "600000.SH",
+      "name": "浦发银行",
+      "close": 10.18,
+      "pct_chg": 0.0,
+      "score": 29.43694798443468,
+      "signal": "持有",
+      "buy_amount": 31558.0,
+      "stop_loss": 9.3656,
+      "take_profit": 11.706999999999999
+    },
+    {
+      "ts_code": "002230.SZ",
+      "name": "科大讯飞",
+      "close": 56.86,
+      "pct_chg": 0.7977,
+      "score": 28.60040701065764,
+      "signal": "持有",
+      "buy_amount": 28430.0,
+      "stop_loss": 52.3112,
+      "take_profit": 65.389
+    },
+    {
+      "ts_code": "688981.SH",
+      "name": "华大九天",
+      "close": 116.2,
+      "pct_chg": 1.105,
+      "score": 27.463010062634332,
+      "signal": "关注",
+      "buy_amount": 23240.0,
+      "stop_loss": 106.90400000000001,
+      "take_profit": 133.63
+    },
+    {
+      "ts_code": "688111.SH",
+      "name": "金山办公",
+      "close": 314.1,
+      "pct_chg": 2.3094,
+      "score": 17.537575571498245,
+      "signal": "持有",
+      "buy_amount": 0,
+      "stop_loss": 288.97200000000004,
+      "take_profit": 361.215
+    }
+  ],
+  "recommendations": {
+    "buy": [
+      "300043.SZ",
+      "603598.SH",
+      "603103.SH",
+      "300364.SZ",
+      "300251.SZ",
+      "002292.SZ",
+      "301231.SZ"
+    ],
+    "watch": [
+      "600015.SH",
+      "000001.SZ",
+      "688981.SH"
+    ]
+  }
+}

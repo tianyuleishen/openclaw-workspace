@@ -1,0 +1,21 @@
+{
+  "name": "小爪自动学习任务",
+  "description": "每天凌晨2:00-8:00自动学习AI技术、论文、书籍，进行系统优化升级",
+  "sessionTarget": "isolated",
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 2-8 * * *",
+    "tz": "Asia/Shanghai"
+  },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "执行自动学习任务：\n\n1. 学习 GitHub 趋势 AI 项目\n2. 学习 Hugging Face 热门模型\n3. 学习 ArXiv 最新 AI 论文\n4. 学习 Moltbook 社区动态\n5. 分析学习内容并生成优化建议\n6. 生成功能扩展计划\n7. 保存学习内容到 memory/auto_learn/\n\n学习完成后，输出学习总结：\n- 学习内容数量\n- 优化建议数量\n- 扩展计划数量\n- 下一步建议\n\n开始执行。",
+    "model": "minimax-portal/MiniMax-M2.1-lightning",
+    "thinking": "off"
+  },
+  "delivery": {
+    "mode": "announce",
+    "channel": "feishu"
+  },
+  "enabled": true
+}

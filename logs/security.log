@@ -1,0 +1,36 @@
+🚀 Starting OpenClaw Security Defense System...
+Security Defense Module loaded successfully
+Security Integration Module loaded successfully
+Security defense layers initialized
+Starting OpenClaw Security Defense Integration...
+Installing security hooks into OpenClaw system...
+Message processing hook installed
+Tool execution hook installed
+Memory operation hook installed
+Security hooks installed successfully
+Enabling behavior monitoring...
+Behavior monitoring enabled
+Configuration updated with security settings
+OpenClaw Security Defense Integration started successfully
+Integration status: {
+  securityModuleLoaded: true,
+  hooksInstalled: true,
+  monitoringActive: true
+}
+
+✅ OpenClaw Security Defense System started successfully!
+
+🛡️  Security Features Active:
+   • Input validation and threat detection
+   • Context isolation
+   • Output filtering
+   • Behavior monitoring
+   • Security violation logging
+   • Anomaly detection
+
+🎯 The OpenClaw Security Defense System is now protecting the AI agent environment.
+   Security measures are active and monitoring for potential threats.
+
+📊 Security monitoring server running on port 3009
+   Health check: http://localhost:3009/health
+   Status: http://localhost:3009/status

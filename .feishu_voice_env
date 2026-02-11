@@ -1,0 +1,5 @@
+# 飞书语音消息配置
+# 生成时间: 2026-02-10 21:32
+
+export FEISHU_APP_ID="cli_a9018e2178f8dcd5"
+export FEISHU_APP_SECRET="ed2b9rT6UOe3pX4wJIw7kfq5fpodHm8e"

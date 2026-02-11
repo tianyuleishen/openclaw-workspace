@@ -1,0 +1,14 @@
+{
+  "id": "20260210_105714_8a865c58",
+  "timestamp": "2026-02-10T10:57:14.982431",
+  "type": "USER_PREF",
+  "content": "User: xionglei\nPreference: language\nValue: Chinese",
+  "embedding": null,
+  "metadata": {
+    "user_id": "xionglei",
+    "preference_type": "language"
+  },
+  "importance": 0.9,
+  "access_count": 0,
+  "last_accessed": "2026-02-10T10:57:14.982434"
+}

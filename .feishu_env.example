@@ -1,0 +1,11 @@
+# 飞书应用配置
+
+# 从飞书开放平台获取
+FEISHU_APP_ID="your_app_id_here"
+FEISHU_APP_SECRET="your_app_secret_here"
+
+# 使用方法:
+# 1. 在飞书开放平台创建应用
+# 2. 获取 APP_ID 和 APP_SECRET
+# 3. 设置权限: im:message:send_as_bot
+# 4. 运行: source .feishu_env

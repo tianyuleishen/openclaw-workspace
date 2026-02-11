@@ -8,7 +8,7 @@ from datetime import datetime
 import json
 
 # TuShare Token配置
-TOKEN = "06dcd1581204b5fbf16a2d500fbba9b7fab80d38329b1e7cc2069f03"
+TOKEN = "YOUR_TUSHARE_TOKEN"
 
 def setup_tushare():
     """配置TuShare"""
