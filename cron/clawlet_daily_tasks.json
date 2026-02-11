@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "description": "小爪自动任务定时任务配置",
+  "tasks": [
+    {
+      "id": "clawlet_morning_routine",
+      "name": "小爪早晨例行任务",
+      "description": "早晨健康检查和任务生成",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行早晨例行任务：\n\n1. 运行健康检查: bash /home/admin/.openclaw/workspace/check_health.sh\n2. 生成今日任务清单: python3 /home/admin/.openclaw/workspace/auto_planner.py\n3. 显示任务状态\n\n输出任务概览。",
+        "model": "minimax-portal/MiniMax-M2.1-lightning",
+        "thinking": "off"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "enabled": true
+    },
+    {
+      "id": "clawlet_afternoon_check",
+      "name": "下午进度检查",
+      "description": "检查下午任务进度",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行下午进度检查：\n\n1. 显示当前任务进度\n2. 检查健康状态\n3. 提醒待办任务\n\n输出进度报告。",
+        "model": "minimax-portal/MiniMax-M2.1-lightning",
+        "thinking": "off"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "enabled": true
+    },
+    {
+      "id": "clawlet_evening_summary",
+      "name": "晚间总结",
+      "description": "晚间任务总结和明日规划",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行晚间总结：\n\n1. 统计今日任务完成情况\n2. 更新MEMORY.md\n3. 生成明日任务清单\n4. 系统健康检查\n\n输出今日总结和明日计划。",
+        "model": "minimax-portal/MiniMax-M2.1-lightning",
+        "thinking": "off"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "enabled": true
+    },
+    {
+      "id": "clawlet_weekly_review",
+      "name": "每周自我评估",
+      "description": "每周评估和改进",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 21 * * 0",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行每周自我评估：\n\n1. 统计本周任务完成率\n2. 评估学习效果\n3. 识别改进点\n4. 更新进化提升计划\n5. 调整下周目标\n\n输出评估报告。",
+        "model": "minimax-portal/MiniMax-M2.1",
+        "thinking": "on"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "enabled": true
+    }
+  ]
+}

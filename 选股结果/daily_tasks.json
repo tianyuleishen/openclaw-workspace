@@ -1,0 +1,137 @@
+{
+  "date": "2026-02-11",
+  "tasks": [
+    {
+      "id": "20260211_001",
+      "name": "回顾昨日进展",
+      "description": "检查MEMORY.md和昨日日志",
+      "category": "work",
+      "priority": 5,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 15,
+      "notes": null
+    },
+    {
+      "id": "20260211_002",
+      "name": "生成今日计划",
+      "description": "根据MEMORY.md生成今日任务清单",
+      "category": "work",
+      "priority": 5,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 10,
+      "notes": null
+    },
+    {
+      "id": "20260211_003",
+      "name": "GitHub趋势学习",
+      "description": "查看GitHub Trending AI项目",
+      "category": "learning",
+      "priority": 4,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 30,
+      "notes": null
+    },
+    {
+      "id": "20260211_004",
+      "name": "执行核心任务",
+      "description": "完成今日最重要的任务",
+      "category": "work",
+      "priority": 5,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 120,
+      "notes": null
+    },
+    {
+      "id": "20260211_005",
+      "name": "Moltbook心跳",
+      "description": "检查Moltbook社区动态",
+      "category": "improvement",
+      "priority": 3,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 15,
+      "notes": null
+    },
+    {
+      "id": "20260211_006",
+      "name": "技术学习",
+      "description": "学习新技术/工具/框架",
+      "category": "learning",
+      "priority": 4,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 60,
+      "notes": null
+    },
+    {
+      "id": "20260211_007",
+      "name": "股票市场分析",
+      "description": "分析A股市场",
+      "category": "work",
+      "priority": 4,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 30,
+      "notes": null
+    },
+    {
+      "id": "20260211_008",
+      "name": "自我评估",
+      "description": "评估今日进展",
+      "category": "improvement",
+      "priority": 3,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 15,
+      "notes": null
+    },
+    {
+      "id": "20260211_009",
+      "name": "更新MEMORY.md",
+      "description": "记录今日学习",
+      "category": "improvement",
+      "priority": 4,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 20,
+      "notes": null
+    },
+    {
+      "id": "20260211_010",
+      "name": "规划明日任务",
+      "description": "为明天制定计划",
+      "category": "work",
+      "priority": 4,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 15,
+      "notes": null
+    },
+    {
+      "id": "20260211_011",
+      "name": "系统健康检查",
+      "description": "检查OpenClaw和依赖服务",
+      "category": "health",
+      "priority": 3,
+      "status": "pending",
+      "scheduled_time": null,
+      "completed_time": null,
+      "duration_minutes": 10,
+      "notes": null
+    }
+  ]
+}
