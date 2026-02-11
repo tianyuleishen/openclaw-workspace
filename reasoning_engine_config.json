@@ -1,0 +1,37 @@
+{
+  "reasoning_engine": {
+    "version": "5.9",
+    "auto_import": true,
+    "auto_detect": true,
+    "message_handler": "integrated",
+    "skills": [
+      {
+        "name": "trigonometric_solver",
+        "keywords": ["tan", "cos", "sin", "θ", "pi"],
+        "engine": "v5.9",
+        "priority": 1
+      },
+      {
+        "name": "extremal_solver", 
+        "keywords": ["最大", "最小", "范围", "极值", "100", "格子"],
+        "engine": "v5.7",
+        "priority": 2
+      },
+      {
+        "name": "geometry_solver",
+        "keywords": ["三角形", "圆形", "角度", "抛物线", "椭圆"],
+        "engine": "v5.5",
+        "priority": 3
+      }
+    ],
+    "integration": {
+      "auto_import_path": "/home/admin/.openclaw/workspace/reasoning_engine_integrator.py",
+      "message_hook": true,
+      "context_enabled": true
+    }
+  },
+  "status": {
+    "enabled": true,
+    "last_updated": "2026-02-11T16:45:00Z"
+  }
+}
